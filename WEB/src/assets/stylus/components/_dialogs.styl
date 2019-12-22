@@ -1,0 +1,282 @@
+@import '../bootstrap'
+
+.v-dialog
+    elevation(0)
+    border-radius: 0
+    margin: 0
+    overflow-y: auto
+    pointer-events: auto
+    transition: .3s $transition.fast-in-fast-out
+    width: 100%
+    z-index: inherit
+    
+    ::-webkit-scrollbar-thumb
+        background: $colors.primary.base
+        
+        &:window-inactive
+            background: $colors.primary.base
+
+    &__content
+        align-items: initial
+        display: flex
+        height: 100%
+        justify-content: flex-start
+        left: 0
+        pointer-events: none
+        position: fixed
+        top: 0
+        transition: .2s $transition.fast-in-fast-out
+        width: 100%
+        z-index: 6
+        outline: none
+
+    &:not(.v-dialog--fullscreen)
+        max-height: 100%
+
+    &__activator
+        cursor: pointer
+
+        *
+            cursor: pointer
+
+        &--disabled
+            pointer-events: none
+
+    &__container
+        display: inline-block
+        vertical-align: middle
+
+    @keyframes animate-dialog
+        0%
+            transform: scale(1)
+
+        50%
+            transform: scale(1.03)
+
+        100%
+            transform: scale(1)
+
+    &--animated
+        animation-duration: .15s
+        animation-name: animate-dialog
+        animation-timing-function: $transition.fast-in-fast-out
+
+    &--fullscreen
+        border-radius: 0
+        margin 0
+        height 100%
+        position fixed
+        overflow-y: auto
+        top: 0
+        left 0
+
+        > .v-card
+            min-height 100%
+            min-width 100%
+            margin 0 !important
+            padding 0 !important
+
+    &--scrollable
+        display: flex
+
+        > .v-card
+            display: flex
+            flex: 1 1 100%
+            flex-direction: column
+
+            > .v-card__title
+            > .v-card__actions
+                flex: 1 0 auto
+
+            > .v-card__text
+                overflow-y: auto
+                backface-visibility: hidden
+                
+    &-center
+        margin auto
+        
+        .v-modal
+            min-height auto
+                
+.v-modal
+    background white
+    min-height 100vh
+    display flex
+    flex-direction column
+    line-height 1.2
+    word-break break-word
+    
+    .v-sheet
+        margin-top 0
+    
+    &-title 
+        padding: $grid-gutters.xl $grid-gutters.xl 0
+        
+        @media(max-width 959px)
+            padding: $grid-gutters.lg $grid-gutters.lg 0
+            
+        h2
+            font-size 24px
+            margin 0 .5rem 0 0
+            font-weight 700
+            text-transform uppercase
+            position relative
+            
+            small
+                text-transform initial
+                display block
+                font-weight: 600
+                font-size: .7em
+                
+        .v-btn-close
+            margin 0 0 0 auto
+            min-width 36px
+            float right
+            z-index 1
+    
+    &-status
+        position absolute
+        width 6px
+        top 0
+        left 0
+        bottom 0
+        background grey
+        
+    &-content
+        padding: $grid-gutters.xl
+        max-width: 100% !important
+        flex 1 1 100%
+        display flex
+        flex-direction column
+        
+        h3 
+            font-size 20px
+            margin 0 0 .7rem
+            font-weight 600
+            
+        h4
+            font-size 18px
+            margin 0 0 .5rem
+            font-weight 500
+            
+        h5
+            font-weight 500
+            
+        p
+            line-height 1.6
+            
+        .v-btns-floating
+            &-filter-open
+                @extend .v-btns-floating-right
+        
+        &-out
+            position: fixed
+            top: 0
+            left: 600px
+            right: 0
+            width auto !important
+            background: $colors.light.base
+            height: 100vh
+            overflow auto
+            animation slide-x-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both .2s
+            z-index -1
+            
+            @media(max-width 1100px)
+                position relative
+                left 0
+                right 0
+                height auto
+                width 100% !important
+                z-index 1
+                
+            .v-sheet
+                background: $colors.light.darken-2
+                
+            .v-btns-floating-top
+                top: $grid-gutters.xl
+                
+                @media(max-width 959px)
+                    top: $grid-gutters.lg
+
+        &-section
+            padding: $grid-gutters.xl
+            flex 1 1 100%
+            
+            .v-btns-floating-top
+                top 0
+                transform: translateY(-50%)
+                margin-top: 0
+                margin-bottom: 0
+            
+            &-search
+                width 400px
+                max-width 100%
+                
+                &.theme--dark
+                    .v-input__slot
+                        background: rgba(black, .2) !important
+                        
+                &.theme--light
+                    .v-input__slot
+                        background: $colors.light.darken-2 !important
+        
+    &-actions
+        padding: 0 $grid-gutters.xl $grid-gutters.xl
+        margin-top auto
+        z-index 1
+        
+        @media(max-width 959px)
+            padding: 0 $grid-gutters.lg $grid-gutters.lg
+        
+    &-detail
+        max-width 600px
+        height 100vh
+        overflow auto
+        
+        @media(max-width 1100px)
+            max-width 100%
+            height auto
+            overflow visible
+            
+    &-loading
+        background: $colors.success.base !important
+        position relative
+        
+        &:after
+            background: url('../img/parts/loading.png') repeat-x $colors.success.base
+            background-size: 300px 100%
+            bottom 0
+            content ''
+            left 0
+            opacity .1
+            position absolute
+            right 0
+            top 0
+            animation loading 1.5s linear infinite
+            z-index 0
+            
+        .v-modal-title
+        .upload-content
+            color: white
+            
+@keyframes loading
+    0%
+        background-position-x 0
+    100%
+        background-position-x -300px
+
+.theme--dark
+    .v-modal
+        background: $colors.dark.base
+        
+        .v-icon
+            color white
+        
+        &-content
+            &-out
+                background: $colors.dark.darken-1
+            
+            &-section
+                &.primary
+                    .v-icon
+                        color: inherit !important

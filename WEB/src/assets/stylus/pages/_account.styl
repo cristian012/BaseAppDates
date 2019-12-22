@@ -1,0 +1,101 @@
+@import '../bootstrap'
+@import '../theme'
+
+.account
+    text-align center
+
+    h2
+        font-size 22px
+        font-weight 400
+
+    &-content
+        margin: 0 auto
+        position relative
+        z-index 0
+    
+    &-data
+        padding-top calc(2rem + 70px)
+        margin-top 0
+
+.avatar
+    background: $colors.light.base
+    width 140px
+    height 140px
+    margin: 0 auto -70px
+    border-radius 50%
+    overflow: hidden
+    position relative
+    z-index 1
+
+    &-upload 
+        width 140px
+        height 140px
+        position relative
+
+        label
+            display flex
+            width 140px
+            height 140px
+            align-items center
+            justify-content center
+            cursor: pointer
+
+            svg
+                fill: $colors.dark.base
+                height 140px
+        
+        .file-uploads
+            position absolute
+            display flex
+            align-items center
+            justify-content center
+            background: rgba($colors.success.base, .5)
+            top 0
+            left 0
+            right 0
+            bottom 0
+            border-radius 50%
+            opacity: 0
+            transition: .5s
+
+        &:hover
+            .file-uploads
+                opacity: 1
+    
+    &-edit 
+        width 140px
+        height 140px
+        position relative
+
+        &-image
+            width 140px
+            height 140px
+            overflow: hidden
+            border-radius 50%
+
+            img
+                width 100%
+                height 100%
+                object-fit: cover
+        
+        &-btns
+            position absolute
+            display flex
+            align-items center
+            justify-content center
+            background: rgba($colors.success.base, .5)
+            top 0
+            left 0
+            right 0
+            bottom 0
+            border-radius 50%
+            // opacity: 0
+            transition: .5s
+
+.theme--dark
+    .avatar
+        background: $colors.dark.base
+
+        label
+            svg
+                fill: $colors.light.base

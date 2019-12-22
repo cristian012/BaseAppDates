@@ -1,0 +1,90 @@
+@import '../bootstrap'
+@import '../theme'
+
+.detailpage
+    &-title
+        margin 48px 0 2rem 
+
+        h1
+            margin 0
+        
+        small
+            display block
+            font-size 18px
+
+    &-status
+        height 8px
+        width 60px
+        border-radius 20px
+        margin: 0 0 .5rem
+        background: grey
+
+    &-section
+        &-title
+            display: flex
+            flex-wrap wrap
+            margin: -.4rem -.4rem 1rem
+
+            > * 
+                margin: .4rem
+
+            h2
+                font-size 24px
+                font-weight 500
+                flex 300px
+                margin: 0 0 .5rem
+        
+        &-search
+            flex 0 1 300px
+            margin: .4rem !important
+
+            &.theme--dark
+                .v-input__slot
+                    background: rgba(black, .2) !important
+                    
+            &.theme--light
+                .v-input__slot
+                    background: $colors.light.darken-2 !important
+        
+    &-menu
+        display: flex
+        align-items center
+
+        .v-list
+            width 100%
+
+    &-tabs
+        position fixed
+        top 56px
+        left 0
+        right 0
+        z-index 2
+        transition 0.2s cubic-bezier(0.4, 0, 0.2, 1)
+
+        &-filter-open
+            right: 250px
+
+        &-menu
+            &-open
+                left: 300px
+                
+                &-mini
+                    left: 56px
+
+        .v-tabs
+            &__div
+                font-size 12px
+
+            &__item
+                .v-badge
+                    &__badge
+                        position relative
+                        top 0
+                        right 0
+    
+    h3
+        font-size 18px
+        font-weight 400
+    
+    // .v-divider
+        // border-style: dashed

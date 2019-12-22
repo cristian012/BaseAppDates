@@ -1,0 +1,129 @@
+<template lang="pug">
+    #pgrs_bg_login
+        #pgrs_frame1
+        #pgrs_frame2
+        #pgrs_core_omp
+
+        //- Compoent navi aplication
+        toolbar()
+
+        v-content
+            v-container(fluid)
+
+        //- Form login 
+        v-content(v-show='false')
+            v-container.login(fluid)
+                .login__content
+                    h1 {{$t('Iniciar sesión')}}
+                    v-form(ref="form" v-model="valid" lazy-validation)
+                        v-text-field(v-model="email" :label="$t('Correo electrónico')" light color="success" :rules="[rules.required, rules.email]" required)
+                        v-text-field(
+                            v-model="password"
+                            :append-icon="showPass ? '$vuetify.icons.hide' : '$vuetify.icons.show'"
+                            :rules="[rules.required, rules.min]"
+                            :type="showPass ? 'text' : 'password'"
+                            :label="$t('Contraseña')"
+                            :hint="$t('Al menos 8 carácteres')"
+                            browser-autocomplete="new-password"
+                            light
+                            color="success"
+                            @click:append="showPass = !showPass")
+                        v-btn.mt-4.mb-3.px-4(round depressed block color="primary" @click="login" :loading="loaderSubmit") {{$t('Ingresar')}}
+                        .v-btns.justify-center
+                            v-btn.px-4(round outline small depressed color="primary" @click="$refs.recoverPassword.open()") {{$t('Recuperar contraseña')}}
+                            //v-btn.px-4(round flat small depressed color="primary" to="/register") {{$t('Registrarse')}}
+                    v-divider.my-3
+                    footer-component
+
+        recover-password(ref="recoverPassword")
+</template>
+
+<script>
+    import RecoverPassword from './components/RecoverPassword.vue'
+    import app from '../../mixins/app'
+    import Toolbar from '../../components/Toolbar'
+
+    export default {
+        mixins : [app],
+        name: 'Login',
+        metaInfo() {
+            return {
+                title: this.$t('Iniciar sesión'),
+                meta: [
+                    { name: 'description', content: this.$t('Iniciar sesión SalesMan CRM') }
+                ]
+            }
+        },
+
+        data() {
+            return {
+                // Formulario
+                valid: true,
+                email: '',
+                password: '',
+
+                // Mostrar contraseña
+                showPass: false,
+
+                // Validación
+                rules: {
+                    required: value => !!value || this.$t('Este campo es requerido'),
+                    min: v => v.length >= 8 || this.$t('Min. 8 caracteres'),
+                    email: v => /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(v) || this.$t('Este correo electrónico debe ser válido')
+                },
+            }
+        },
+
+        methods:{
+            // Formulario
+            // async login(){
+            //     if (this.$refs.form.validate()) {
+            //         this.loaderSubmit = true	
+                    
+            //         let params = { 
+            //             url:"/login",
+            //             form:{ 
+            //                 email    : this.email, 
+            //                 password : this.password
+            //             }
+            //         }
+            //         let data =  await this.sendPost(params)  
+            //         if(data.response){
+            //             this.$setItem('profile_log', data.profile).then((r)=>{
+            //                 this.$setItem('salesman', data.data, () => this.$router.push({ path: 'dashboard' }))
+            //             }) 
+            //         }
+            //         else{
+            //             this.manageAlert(false,data.message)
+            //         }
+            //         this.loaderSubmit = false
+            //     } 
+            //     else{
+            //         this.manageAlert(false,"Faltan campos por completar.")
+            //     }            
+            // },
+            async login(){
+                if (this.$refs.form.validate()) {
+                    
+                    this.loaderSubmit = true	
+                    
+                    setTimeout(() => {
+                        this.$router.push({ path: 'dashboard' })
+                        this.manageAlert(true,"Bienvenido.")
+                    }, 1000);  
+
+                } 
+                else{
+                    this.manageAlert(false,"Faltan campos por completar.")
+                }            
+            },
+            reset() {
+                this.$refs.form.reset()
+            },
+        },
+
+        components: {
+            RecoverPassword, Toolbar
+        }
+    };
+</script>

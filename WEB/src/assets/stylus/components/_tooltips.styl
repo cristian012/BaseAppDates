@@ -1,0 +1,29 @@
+@import '../bootstrap'
+
+.v-tooltip
+    position: relative
+
+    &__content
+        background: $grey.darken-2
+        border-radius: 2px
+        color: #FFFFFF
+        font-size: 12px
+        display: inline-block
+        padding: 5px 8px
+        position: absolute
+        text-transform: initial
+        transition: .15s $transition.swing
+        width: auto
+        z-index 999 !important
+        elevation(2)
+
+        &--fixed
+            position fixed
+
+        &[class*="-active"] {
+            pointer-events: none
+        }
+
+    @media $display-breakpoints.sm-and-down
+        .v-tooltip__content
+            padding: 10px 16px

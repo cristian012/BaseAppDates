@@ -1,0 +1,797 @@
+{
+    "userData": {
+        "name": "German Forero Fonseca",
+        "user_name": "German Forero",
+        "email": "german.forero@email.com",
+        "phone": "3505551234",
+        "avatar": "https://bit.ly/2DS5K9A"
+    },
+
+    "modules": [
+        {
+            "uuid": "1",
+            "name": "Panel de control"
+        },
+        {
+            "uuid": "2",
+            "name": "Clientes"
+        },
+        {
+            "uuid": "3",
+            "name": "Contactos"
+        },
+        {
+            "uuid": "4",
+            "name": "Oportunidades"
+        },
+        {
+            "uuid": "5",
+            "name": "Actividades"
+        },
+        {
+            "uuid": "6",
+            "name": "Agenda"
+        },
+        {
+            "uuid": "7",
+            "name": "Historial"
+        },
+        {
+            "uuid": "8",
+            "name": "Usuarios"
+        },
+        {
+            "uuid": "9",
+            "name": "Estados de oportunidad"
+        },
+        {
+            "uuid": "10",
+            "name": "Información empresarial"
+        }
+    ],
+
+    "coins": [
+        { "country": "Afganistán", "symbol": "؋", "iso": "AFN", "value": "1" },
+        { "country": "Albania", "symbol": "L", "iso": "ALL", "value": "2" },
+        { "country": "Alemania", "symbol": "€", "iso": "EUR", "value": "3" },
+        { "country": "Andorra", "symbol": "€", "iso": "EUR", "value": "4" },
+        { "country": "Angola", "symbol": "Kz", "iso": "AOA", "value": "5" },
+        { "country": "Arabia Saudí", "symbol": "ر.س", "iso": "SAR", "value": "6" },
+        { "country": "Argelia", "symbol": "د.ج", "iso": "DZD", "value": "7" },
+        { "country": "Argentina", "symbol": "$", "iso": "ARS", "value": "8" },
+        { "country": "Armenia", "symbol": "", "iso": "AMD", "value": "9" },
+        { "country": "Aruba", "symbol": "ƒ", "iso": "AWG", "value": "10" },
+        { "country": "Australia", "symbol": "$", "iso": "AUD", "value": "11" },
+        { "country": "Austria", "symbol": "€", "iso": "EUR", "value": "12" },
+        { "country": "Azerbayán", "symbol": "", "iso": "AZN", "value": "13" },
+        { "country": "Bahamas", "symbol": "$", "iso": "BSD", "value": "14" },
+        { "country": "Bangladés, Bangladesh", "symbol": "৳", "iso": "BDT", "value": "15" },
+        { "country": "Barbados", "symbol": "$", "iso": "BBD", "value": "16" },
+        { "country": "Baréin, Bahrein", "symbol": ".د.ب", "iso": "BHD", "value": "17" },
+        { "country": "Bélgica", "symbol": "€", "iso": "EUR", "value": "18" },
+        { "country": "Belice", "symbol": "$", "iso": "BZD", "value": "19" },
+        { "country": "Bielorrusia, Belarús", "symbol": "Br", "iso": "BYR", "value": "20" },
+        { "country": "Birmania, Myanmar", "symbol": "K", "iso": "MMK", "value": "21" },
+        { "country": "Bolivia", "symbol": "Bs.", "iso": "BOB", "value": "22" },
+        { "country": "Bosnia y Herzegovina", "symbol": "KM", "iso": "BAM", "value": "23" },
+        { "country": "Botsuana, Botswana", "symbol": "P", "iso": "BWP", "value": "24" },
+        { "country": "Brasil", "symbol": "R$", "iso": "BRL", "value": "25" },
+        { "country": "Brunéi", "symbol": "$", "iso": "BND", "value": "26" },
+        { "country": "Bulgaria", "symbol": "лв", "iso": "BGN", "value": "27" },
+        { "country": "Burkina Faso", "symbol": "Fr", "iso": "XOF", "value": "28" },
+        { "country": "Burundi", "symbol": "Fr", "iso": "BIF", "value": "29" },
+        { "country": "Bután", "symbol": "Nu.", "iso": "BTN", "value": "30" },
+        { "country": "Cabo Verde", "symbol": "Esc, $", "iso": "CVE", "value": "31" },
+        { "country": "Camboya", "symbol": "៛", "iso": "KHR", "value": "32" },
+        { "country": "Canadá", "symbol": "$", "iso": "CAD", "value": "33" },
+        { "country": "Catar, Qatar", "symbol": "ر.ق", "iso": "QAR", "value": "34" },
+        { "country": "Chad", "symbol": "Fr", "iso": "XAF", "value": "35" },
+        { "country": "Chile", "symbol": "$", "iso": "CLP", "value": "36" },
+        { "country": "China", "symbol": "¥, 元", "iso": "CNY", "value": "37" },
+        { "country": "Chipre", "symbol": "€", "iso": "EUR", "value": "38" },
+        { "country": "Ciudad del Vaticano", "symbol": "€", "iso": "EUR", "value": "39" },
+        { "country": "Colombia", "symbol": "$", "iso": "COP", "value": "40" },
+        { "country": "Comores", "symbol": "Fr", "iso": "KMF", "value": "41" },
+        { "country": "Corea del Norte", "symbol": "₩", "iso": "KPW", "value": "42" },
+        { "country": "Corea del Sur", "symbol": "₩", "iso": "KRW", "value": "43" },
+        { "country": "Costa de Marfil, Côte d´Ivoire", "symbol": "Fr", "iso": "XOF", "value": "44" },
+        { "country": "Costa Rica", "symbol": "₡", "iso": "CRC", "value": "45" },
+        { "country": "Croacia", "symbol": "kn", "iso": "HRK", "value": "46" },
+        { "country": "Cuba", "symbol": "$", "iso": "CUP", "value": "47" },
+        { "country": "Curação", "symbol": "ƒ", "iso": "ANG", "value": "48" },
+        { "country": "Dinamarca", "symbol": "kr", "iso": "DKK", "value": "49" },
+        { "country": "Ecuador", "symbol": "$", "iso": "USD", "value": "50" },
+        { "country": "Egipto", "symbol": "£, ج.م", "iso": "EGP", "value": "51" },
+        { "country": "El Salvador", "symbol": "₡", "iso": "SVC", "value": "52" },
+        { "country": "Emiratos Árabes Unidos", "symbol": "د.إ", "iso": "AED", "value": "53" },
+        { "country": "Eritrea", "symbol": "Nfk", "iso": "ERN", "value": "54" },
+        { "country": "Eslovaquia", "symbol": "€", "iso": "EUR", "value": "55" },
+        { "country": "Eslovenia", "symbol": "€", "iso": "EUR", "value": "56" },
+        { "country": "España", "symbol": "€", "iso": "EUR", "value": "57" },
+        { "country": "Estados Federados de Micronesia", "symbol": "$", "iso": "nenhum", "value": "58" },
+        { "country": "Estados Unidos", "symbol": "$", "iso": "USD", "value": "59" },
+        { "country": "Estonia", "symbol": "€", "iso": "EUR", "value": "60" },
+        { "country": "Etiopía", "symbol": "Br", "iso": "ETB", "value": "61" },
+        { "country": "Filipinas", "symbol": "₱", "iso": "PHP", "value": "62" },
+        { "country": "Finlandia", "symbol": "€", "iso": "EUR", "value": "63" },
+        { "country": "Francia", "symbol": "€", "iso": "EUR", "value": "64" },
+        { "country": "Gabón", "symbol": "Fr", "iso": "XAF", "value": "65" },
+        { "country": "Gambia", "symbol": "D", "iso": "GMD", "value": "66" },
+        { "country": "Gana", "symbol": "₵", "iso": "GHS", "value": "67" },
+        { "country": "Georgia", "symbol": "ლ", "iso": "GEL", "value": "68" },
+        { "country": "Gibraltar", "symbol": "£", "iso": "GIP", "value": "69" },
+        { "country": "Grecia", "symbol": "€", "iso": "EUR", "value": "70" },
+        { "country": "Guatemala", "symbol": "Q", "iso": "GTQ", "value": "71" },
+        { "country": "Guinea", "symbol": "Fr", "iso": "GNF", "value": "72" },
+        { "country": "Guinea Ecuatorial", "symbol": "Fr", "iso": "XAF", "value": "73" },
+        { "country": "Guinea-Bisáu, Guinea Bissau", "symbol": "Fr", "iso": "XOF", "value": "74" },
+        { "country": "Haití", "symbol": "G", "iso": "HTG", "value": "75" },
+        { "country": "Honduras", "symbol": "L", "iso": "HNL", "value": "76" },
+        { "country": "Hungria", "symbol": "Ft", "iso": "HUF", "value": "77" },
+        { "country": "India", "symbol": "₹", "iso": "INR", "value": "78" },
+        { "country": "Indonesia", "symbol": "Rp", "iso": "IDR", "value": "79" },
+        { "country": "Irak", "symbol": "ع.د", "iso": "IQD", "value": "80" },
+        { "country": "Irán", "symbol": "﷼", "iso": "IRR", "value": "81" },
+        { "country": "Irlanda", "symbol": "€", "iso": "EUR", "value": "82" },
+        { "country": "Islandia", "symbol": "kr", "iso": "ISK", "value": "83" },
+        { "country": "Islas Caimán", "symbol": "$", "iso": "KYD", "value": "84" },
+        { "country": "Islas Salomón", "symbol": "$", "iso": "SBD", "value": "85" },
+        { "country": "Israel", "symbol": "₪", "iso": "ILS", "value": "86" },
+        { "country": "Italia", "symbol": "€", "iso": "EUR", "value": "87" },
+        { "country": "Jamaica", "symbol": "$", "iso": "JMD", "value": "88" },
+        { "country": "Japón", "symbol": "¥", "iso": "JPY", "value": "89" },
+        { "country": "Jordania", "symbol": "د.ا", "iso": "JOD", "value": "90" },
+        { "country": "Kazajistán, Kazajstán", "symbol": "₸", "iso": "KZT", "value": "91" },
+        { "country": "Kenia, Kenya", "symbol": "Sh", "iso": "KES", "value": "92" },
+        { "country": "Kirguzistán", "symbol": "лв", "iso": "KGS", "value": "93" },
+        { "country": "Kuwait", "symbol": "د.ك", "iso": "KWD", "value": "94" },
+        { "country": "Laos", "symbol": "₭", "iso": "LAK", "value": "95" },
+        { "country": "Lesoto, Lesotho", "symbol": "L", "iso": "LSL", "value": "96" },
+        { "country": "Letonia", "symbol": "Ls", "iso": "LVL", "value": "97" },
+        { "country": "Líbano", "symbol": "ل.ل", "iso": "LBP", "value": "98" },
+        { "country": "Liberia", "symbol": "$", "iso": "LRD", "value": "99" },
+        { "country": "Libia", "symbol": "ل.د", "iso": "LYD", "value": "100" },
+        { "country": "Lituania", "symbol": "Lt", "iso": "LTL", "value": "101" },
+        { "country": "Luxemburgo", "symbol": "€", "iso": "EUR", "value": "102" },
+        { "country": "Macao", "symbol": "P", "iso": "MOP", "value": "103" },
+        { "country": "Macedonia", "symbol": "ден", "iso": "MKD", "value": "104" },
+        { "country": "Madagascar", "symbol": "Ar", "iso": "MGA", "value": "105" },
+        { "country": "Malasia", "symbol": "RM", "iso": "MYR", "value": "106" },
+        { "country": "Malaui, Malawi", "symbol": "MK", "iso": "MWK", "value": "107" },
+        { "country": "Maldivas", "symbol": ".ރ", "iso": "MVR", "value": "108" },
+        { "country": "Mali", "symbol": "Fr", "iso": "XOF", "value": "109" },
+        { "country": "Malta", "symbol": "€", "iso": "EUR", "value": "110" },
+        { "country": "Marruecos", "symbol": "د.م.", "iso": "MAD", "value": "111" },
+        { "country": "Mauricio", "symbol": "₨", "iso": "MUR", "value": "112" },
+        { "country": "Mauritania", "symbol": "UM", "iso": "MRO", "value": "113" },
+        { "country": "México", "symbol": "$", "iso": "MXN", "value": "114" },
+        { "country": "Moldavia", "symbol": "L", "iso": "MDL", "value": "115" },
+        { "country": "Mónaco", "symbol": "€", "iso": "EUR", "value": "116" },
+        { "country": "Mongolia", "symbol": "₮", "iso": "MNT", "value": "117" },
+        { "country": "Montenegro", "symbol": "€", "iso": "EUR", "value": "118" },
+        { "country": "Mozambique", "symbol": "MT", "iso": "MZN", "value": "119" },
+        { "country": "Namibia", "symbol": "$", "iso": "NAD", "value": "120" },
+        { "country": "Nauru", "symbol": "$", "iso": "Nenhum", "value": "121" },
+        { "country": "Nepal", "symbol": "₨", "iso": "NPR", "value": "122" },
+        { "country": "Nicaragua", "symbol": "C$", "iso": "NIO", "value": "123" },
+        { "country": "Níger", "symbol": "Fr", "iso": "XOF", "value": "124" },
+        { "country": "Nigeria", "symbol": "₦", "iso": "NGN", "value": "125" },
+        { "country": "Noruega", "symbol": "kr", "iso": "NOK", "value": "126" },
+        { "country": "Nueva Caledonia", "symbol": "Fr", "iso": "XPF", "value": "127" },
+        { "country": "Nueva Zelanda", "symbol": "$", "iso": "NZD", "value": "128" },
+        { "country": "Omán", "symbol": "ر.ع.", "iso": "OMR", "value": "129" },
+        { "country": "Países Bajos", "symbol": "€", "iso": "EUR", "value": "130" },
+        { "country": "Panamá", "symbol": "B/.", "iso": "PAB", "value": "131" },
+        { "country": "Papua-Nueva Guiné", "symbol": "K", "iso": "PGK", "value": "132" },
+        { "country": "Paquistán", "symbol": "₨", "iso": "PKR", "value": "133" },
+        { "country": "Paraguay", "symbol": "₲", "iso": "PYG", "value": "134" },
+        { "country": "Perú", "symbol": "S/.", "iso": "PEN", "value": "135" },
+        { "country": "Polinesia Francesa", "symbol": "Fr", "iso": "XPF", "value": "136" },
+        { "country": "Polonia", "symbol": "zł", "iso": "PLN", "value": "137" },
+        { "country": "Portugal", "symbol": "€", "iso": "EUR", "value": "138" },
+        { "country": "Reino Unido", "symbol": "£", "iso": "GBP", "value": "139" },
+        { "country": "República Centroafricana", "symbol": "Fr", "iso": "XAF", "value": "140" },
+        { "country": "República Checa", "symbol": "Kč", "iso": "CZK", "value": "141" },
+        { "country": "República del Congo", "symbol": "Fr", "iso": "XAF", "value": "142" },
+        { "country": "República Democrática del Congo", "symbol": "Fr", "iso": "CDF", "value": "143" },
+        { "country": "República Dominicana", "symbol": "$", "iso": "DOP", "value": "144" },
+        { "country": "Ruanda, Rwanda", "symbol": "Fr", "iso": "RWF", "value": "145" },
+        { "country": "Rumanía", "symbol": "L", "iso": "RON", "value": "146" },
+        { "country": "Rusia", "symbol": "₽", "iso": "RUB", "value": "147" },
+        { "country": "Samoa", "symbol": "T", "iso": "WST", "value": "148" },
+        { "country": "San Cristóbal y Nieves, Saint Kitts y Nevis", "symbol": "$", "iso": "XCD", "value": "149" },
+        { "country": "San Marino", "symbol": "€", "iso": "EUR", "value": "150" },
+        { "country": "San Viccente y las Granadinas", "symbol": "$", "iso": "XCD", "value": "151" },
+        { "country": "Santa Lucía", "symbol": "$", "iso": "XCD", "value": "152" },
+        { "country": "Santo Tomé y Príncipe", "symbol": "Db", "iso": "STD", "value": "153" },
+        { "country": "Seichelles", "symbol": "₨", "iso": "SCR", "value": "154" },
+        { "country": "Senegal", "symbol": "Fr", "iso": "XOF", "value": "155" },
+        { "country": "Serbia", "symbol": "дин. o din.", "iso": "RSD", "value": "156" },
+        { "country": "Sierra Leona", "symbol": "Le", "iso": "SLL", "value": "157" },
+        { "country": "Singapur", "symbol": "$", "iso": "SGD", "value": "158" },
+        { "country": "Siria", "symbol": "£ o ل.س", "iso": "SYP", "value": "159" },
+        { "country": "Somalia", "symbol": "Sh", "iso": "SOS", "value": "160" },
+        { "country": "Sri Lanka", "symbol": "Rs", "iso": "LKR", "value": "161" },
+        { "country": "Suazilandia, Swazilandia", "symbol": "L", "iso": "SZL", "value": "162" },
+        { "country": "Sudáfrica", "symbol": "R", "iso": "ZAR", "value": "163" },
+        { "country": "Sudán", "symbol": "£", "iso": "SDG", "value": "164" },
+        { "country": "Sudán del Sur", "symbol": "£", "iso": "SSP", "value": "165" },
+        { "country": "Suecia", "symbol": "kr", "iso": "SEK", "value": "166" },
+        { "country": "Suiza", "symbol": "Fr", "iso": "CHF", "value": "167" },
+        { "country": "Surinám", "symbol": "$", "iso": "SRD", "value": "168" },
+        { "country": "Tailandia", "symbol": "฿", "iso": "THB", "value": "169" },
+        { "country": "Taiwán", "symbol": "$", "iso": "TWD", "value": "170" },
+        { "country": "Tanzania", "symbol": "Sh", "iso": "TZS", "value": "171" },
+        { "country": "Tayikistán", "symbol": "ЅМ", "iso": "TJS", "value": "172" },
+        { "country": "Togo", "symbol": "Fr", "iso": "XOF", "value": "173" },
+        { "country": "Tonga", "symbol": "T$", "iso": "TOP", "value": "174" },
+        { "country": "Trindade e Tobago", "symbol": "$", "iso": "TTD", "value": "175" },
+        { "country": "Túnez", "symbol": "د.ت", "iso": "TND", "value": "176" },
+        { "country": "Turkmenistán", "symbol": "m", "iso": "TMT", "value": "177" },
+        { "country": "Turquia", "symbol": "", "iso": "TRY", "value": "178" },
+        { "country": "Ucrania", "symbol": "₴", "iso": "UAH", "value": "179" },
+        { "country": "Uganda", "symbol": "Sh", "iso": "UGX", "value": "180" },
+        { "country": "Uruguay", "symbol": "$", "iso": "UYU", "value": "181" },
+        { "country": "Uzbequistán", "symbol": "лв", "iso": "UZS", "value": "182" },
+        { "country": "Vanuatu", "symbol": "Vt", "iso": "VUV", "value": "183" },
+        { "country": "Venezuela", "symbol": "Bs F", "iso": "VEF", "value": "184" },
+        { "country": "Vietnam", "symbol": "₫", "iso": "VND", "value": "185" },
+        { "country": "Yemen", "symbol": "﷼", "iso": "YER", "value": "186" },
+        { "country": "Yibuti, Djibouti", "symbol": "Fr", "iso": "DJF", "value": "187" },
+        { "country": "Zambia", "symbol": "ZK", "iso": "ZMK", "value": "188" },
+        { "country": "Zimbabue, Zimbabwe", "symbol": "$", "iso": "ZWL", "value": "189" }
+    ],
+
+    "clients": [
+        {
+            "uuid": "1",
+            "name": "Montes Nascetur Ridiculus LLC",
+            "id": "",
+            "email": "",
+            "phone": "",
+            "address": "",
+            "contact": [],
+            "opportunity": [],
+            "status": false
+        },
+        {
+            "uuid": "2",
+            "name": "Dolor Elit Pellentesque Industries",
+            "id": "16180610-6645",
+            "email": "quis.pede@aliquet.co.uk",
+            "phone": "(997) 243-2458",
+            "address": "587-4038 Feugiat Street",
+            "contact": [1, 3, 6],
+            "opportunity": [1, 4, 6, 7, 8, 9],
+            "status": false
+        },
+        {
+            "uuid": "3",
+            "name": "Eros Nam Consequat Associates",
+            "id": "16410515-5909",
+            "email": "orci@Nulla.ca",
+            "phone": "(655) 136-4150",
+            "address": "665 Sollicitudin St.",
+            "contact": [9],
+            "opportunity": [1],
+            "status": false
+        },
+        {
+            "uuid": "4",
+            "name": "Vitae Odio Sagittis Limited",
+            "id": "16300330-4957",
+            "email": "venenatis@cursusNunc.edu",
+            "phone": "(902) 885-9846",
+            "address": "P.O. Box 363, 2377 Id, Av.",
+            "contact": [1],
+            "opportunity": [1],
+            "status": true
+        },
+        {
+            "uuid": "5",
+            "name": "Blandit At PC",
+            "id": "16260516-7838",
+            "email": "posuere.vulputate@sapien.co.uk",
+            "phone": "(757) 142-4203",
+            "address": "734-4629 Quam. St.",
+            "contact": [9],
+            "opportunity": [1],
+            "status": true
+        },
+        {
+            "uuid": "6",
+            "name": "Dapibus Quam Quis PC",
+            "id": "16460608-8930",
+            "email": "Sed.dictum@Nunc.ca",
+            "phone": "(285) 125-2955",
+            "address": "1496 Ullamcorper, Ave",
+            "contact": [7],
+            "opportunity": [1],
+            "status": true
+        },
+        {
+            "uuid": "7",
+            "name": "Vestibulum Accumsan Corporation",
+            "id": "16690104-5200",
+            "email": "mi@sedsem.edu",
+            "phone": "(571) 387-4330",
+            "address": "7700 Lobortis Av.",
+            "contact": [4],
+            "opportunity": [1],
+            "status": true
+        },
+        {
+            "uuid": "8",
+            "name": "At Arcu Vestibulum PC",
+            "id": "16541209-3105",
+            "email": "luctus.ut.pellentesque@adipiscingMauris.co.uk",
+            "phone": "(179) 408-0061",
+            "address": "273-1783 Tincidunt, St.",
+            "contact": [7],
+            "opportunity": [1],
+            "status": false
+        },
+        {
+            "uuid": "9",
+            "name": "Curabitur Consequat Inc.",
+            "id": "16470306-5781",
+            "email": "mi@dictumauguemalesuada.org",
+            "phone": "(659) 541-0226",
+            "address": "403-2281 Imperdiet Ave",
+            "contact": [6],
+            "opportunity": [1],
+            "status": true
+        },
+        {
+            "uuid": "10",
+            "name": "Leo Cras Institute",
+            "id": "16060413-3652",
+            "email": "et@lobortistellus.edu",
+            "phone": "(396) 849-6707",
+            "address": "Ap #646-2776 A St.",
+            "contact": [10],
+            "opportunity": [1],
+            "status": true
+        }
+    ],
+
+    "contacts": [
+        {
+            "uuid": "1",
+            "name": "Channing N. Howell",
+            "email": "",
+            "phone": "",
+            "job": "",
+            "client": [],
+            "status": false
+        },
+        {
+            "uuid": "2",
+            "name": "Beck Z. Bullock",
+            "email": "ornare.tortor@dolor.ca",
+            "phone": "(702) 296-5189",
+            "job": "Diseñador",
+            "client": [1, 3, 6],
+            "status": false
+        },
+        {
+            "uuid": "3",
+            "name": "Vernon E. Davenport",
+            "email": "et.ipsum@nec.org",
+            "phone": "(622) 563-3029",
+            "job": "Ingeniero",
+            "client": [2, 3],
+            "status": false
+        },
+        {
+            "uuid": "4",
+            "name": "Gavin J. May",
+            "email": "lorem.ut@sollicitudin.co.uk",
+            "phone": "(888) 102-9114",
+            "job": "Ingeniero",
+            "client": [3, 4, 4, 6],
+            "status": true
+        },
+        {
+            "uuid": "5",
+            "name": "Lars J. Kemp",
+            "email": "netus.et.malesuada@auctor.net",
+            "phone": "(251) 712-6003",
+            "job": "Vendedor",
+            "client": [7, 8],
+            "status": true
+        },
+        {
+            "uuid": "6",
+            "name": "Slade X. Willis",
+            "email": "gravida@commodoat.net",
+            "phone": "(194) 762-0208",
+            "job": "Diseñador",
+            "client": [9, 10],
+            "status": false
+        },
+        {
+            "uuid": "7",
+            "name": "Cheyenne P. Oneill",
+            "email": "Fusce.aliquam.enim@Mauris.org",
+            "phone": "(267) 578-8603",
+            "job": "Vendedor",
+            "client": [1],
+            "status": false
+        },
+        {
+            "uuid": "8",
+            "name": "Burton U. Avila",
+            "email": "eu.tellus@purus.edu",
+            "phone": "(448) 857-0310",
+            "job": "Vendedor",
+            "client": [10],
+            "status": true
+        },
+        {
+            "uuid": "9",
+            "name": "Declan A. Cardenas",
+            "email": "lobortis.ultrices@eget.ca",
+            "phone": "(338) 627-2741",
+            "job": "Diseñador",
+            "client": [4, 6],
+            "status": true
+        },
+        {
+            "uuid": "10",
+            "name": "Ruby I. Arnold",
+            "email": "lobortis.quam@eunullaat.co.uk",
+            "phone": "(490) 615-2993",
+            "job": "Gerente",
+            "client": [1, 3],
+            "status": false
+        }
+    ],
+
+    "users": [
+        {
+            "uuid": "1",
+            "name": "Michael Gaona Buitrago",
+            "email": "michael@progresus.co",
+            "phone": "350 555 1234",
+            "profile": 0,
+            "status": true
+        },
+        {
+            "uuid": "2",
+            "name": "Johan Gaona Buitrago",
+            "email": "johan@progresus.co",
+            "phone": "350 216 8420",
+            "profile": 1,
+            "status": true
+        },
+        {
+            "uuid": "3",
+            "name": "Oscar Jimenez",
+            "email": "oscar@progresus.co",
+            "phone": "",
+            "profile": 1,
+            "status": false
+        }
+    ],
+
+    "registeredUsers": [
+        {
+            "uuid": "1",
+            "name": "Karol Torres Gonzalez",
+            "email": "karol.torres@progresus.co",
+            "id_type": "C.C.",
+            "id": "1056566237",
+            "country": "Colombia",
+            "city": "Bogotá",
+            "address": "Calle 50 # 5 - 26",
+            "phone": "350 555 1234",
+            "registration_date": "2019-10-31"
+        }
+    ],
+
+    "opportunities": [
+        {
+            "uuid": "0",
+            "oid": "523",
+            "name": "Venta de software",
+            "client": "",
+            "contact": "",
+            "user": "",
+            "dateOpening": "",
+            "dateClosing": "",
+            "cost": "",
+            "price": "",
+            "phase": 1
+        },
+        {
+            "uuid": "1",
+            "oid": "100",
+            "name": "lectus. Cum",
+            "client": "2",
+            "contact": "1",
+            "user": "3",
+            "dateOpening": "2019-05-29",
+            "dateClosing": "2018-12-09",
+            "cost": 3213848,
+            "price": 17433844,
+            "phase": 2
+        },
+        {
+            "uuid": "2",
+            "oid": "101",
+            "name": "enim,",
+            "client": "8",
+            "contact": "5",
+            "user": "1",
+            "dateOpening": "2019-11-10",
+            "dateClosing": "2019-07-24",
+            "cost": 6524543,
+            "price": 19119595,
+            "phase": 1
+        },
+        {
+            "uuid": "3",
+            "oid": "102",
+            "name": "scelerisque neque sed",
+            "client": "6",
+            "contact": "1",
+            "user": "2",
+            "dateOpening": "2018-08-01",
+            "dateClosing": "2019-09-28",
+            "cost": 6637863,
+            "price": 13677894,
+            "phase": 2
+        },
+        {
+            "uuid": "4",
+            "oid": "103",
+            "name": "ut dolor dapibus",
+            "client": "5",
+            "contact": "5",
+            "user": "3",
+            "dateOpening": "2018-03-04",
+            "dateClosing": "2018-05-16",
+            "cost": 6389330,
+            "price": 7666905,
+            "phase": 2
+        },
+        {
+            "uuid": "5",
+            "oid": "104",
+            "name": "scelerisque sed, sapien. Nunc",
+            "client": "10",
+            "contact": "3",
+            "user": "1",
+            "dateOpening": "2018-02-23",
+            "dateClosing": "2018-12-29",
+            "cost": 9251202,
+            "price": 19139140,
+            "phase": 1
+        },
+        {
+            "uuid": "6",
+            "oid": "105",
+            "name": "eu dui. Cum sociis",
+            "client": "10",
+            "contact": "3",
+            "user": "2",
+            "dateOpening": "2018-06-05",
+            "dateClosing": "2018-12-07",
+            "cost": 7379650,
+            "price": 17137777,
+            "phase": 3
+        },
+        {
+            "uuid": "7",
+            "oid": "106",
+            "name": "nunc ac mattis ornare,",
+            "client": "6",
+            "contact": "7",
+            "user": "2",
+            "dateOpening": "2018-03-03",
+            "dateClosing": "2018-04-09",
+            "cost": 8788463,
+            "price": 16484643,
+            "phase": 1
+        },
+        {
+            "uuid": "8",
+            "oid": "107",
+            "name": "consectetuer mauris id sapien.",
+            "client": "9",
+            "contact": "9",
+            "user": "3",
+            "dateOpening": "2018-05-15",
+            "dateClosing": "2018-02-12",
+            "cost": 3090633,
+            "price": 13874191,
+            "phase": 3
+        },
+        {
+            "uuid": "9",
+            "oid": "108",
+            "name": "In ornare sagittis",
+            "client": "9",
+            "contact": "10",
+            "user": "3",
+            "dateOpening": "2019-01-03",
+            "dateClosing": "2019-01-22",
+            "cost": 8012262,
+            "price": 1770306,
+            "phase": 3
+        },
+        {
+            "uuid": "10",
+            "oid": "109",
+            "name": "aliquam",
+            "client": "9",
+            "contact": "6",
+            "user": "2",
+            "dateOpening": "2018-02-01",
+            "dateClosing": "2018-05-21",
+            "cost": 3757409,
+            "price": 1659555,
+            "phase": 3
+        }
+    ],
+
+    "phases": [
+        {
+            "value": 1,
+            "name": "Perdida",
+            "color": "error"
+        },
+        {
+            "value": 2,
+            "name": "En progreso",
+            "color": "warning"
+        },
+        {
+            "value": 3,
+            "name": "Ganada",
+            "color": "success"
+        }
+    ],
+
+    "status": [
+        { 
+            "name": "Activo", 
+            "value": 1
+        },
+        { 
+            "name": "Inactivo", 
+            "value": 0
+        }
+    ],
+
+    "orderBy": [
+        { "text": "A - Z", "value": 0 },
+        { "text": "Z - A", "value": 1 },
+        { "text": "Fecha Asc.", "value": 2 },
+        { "text": "Fecha Desc.", "value": 3 }
+    ],
+
+    "activities": [
+        {
+            "title": "Actividad A",
+            "details": "Esta es una actividad importante",
+            "opportunity": "1",
+            "user_manager": "1",
+            "date": "2019-12-01",
+            "time": "09:00",
+            "duration": 60,
+            "allDay": 0,
+            "phase": 1,
+            "open": false
+        },
+        {
+            "title": "Actividad B",
+            "details": "Actividad para todo el día",
+            "opportunity": "2",
+            "user_manager": "2",
+            "date": "2019-12-02",
+            "time": "",
+            "duration": "",
+            "allDay": 1,
+            "phase": 1,
+            "open": false
+        },
+        {
+            "title": "Actividad C",
+            "details": "Hacer una llamada",
+            "opportunity": "3",
+            "user_manager": "3",
+            "date": "2019-12-05",
+            "time": "15:30",
+            "duration": 60,
+            "allDay": 0,
+            "phase": 2,
+            "open": false
+        }
+    ],
+
+    "phasesActivity": [
+        { 
+            "value": 1,
+            "name": "Por iniciar"
+        },
+        { 
+            "value": 2,
+            "name": "Finalizada"
+        }
+    ],
+
+    "events": [
+        {
+            "title": "Evento A",
+            "details": "Esta es una visita importante",
+            "date": "2019-12-01",
+            "time": "09:00",
+            "duration": 60,
+            "place": "Calle 50 # 3 - 52",
+            "guests": [
+                {
+                    "text": "usuario@email.com"
+                }
+            ],
+            "allDay": 0,
+            "open": false
+        },
+        {
+            "title": "Evento B",
+            "details": "Actividad para todo el día",
+            "date": "2019-12-02",
+            "time": "",
+            "duration": "",
+            "place": "Calle 50 # 3 - 52",
+            "guests": [
+                {
+                    "text": "usuario@email.com"
+                },
+                {
+                    "text": "persona@email.com"
+                },
+                {
+                    "text": "empleado@email.com"
+                },
+                {
+                    "text": "gerente@email.com"
+                }
+            ],
+            "allDay": 1,
+            "open": false
+        },
+        {
+            "title": "Evento C",
+            "details": "Reunión general",
+            "date": "2019-12-05",
+            "time": "15:30",
+            "duration": 60,
+            "place": "Calle 50 # 3 - 52",
+            "guests": [
+                {
+                    "text": "usuario@email.com"
+                },
+                {
+                    "text": "persona@email.com"
+                }
+            ],
+            "allDay": 0,
+            "open": false
+        },
+        {
+            "title": "Evento H",
+            "details": "",
+            "date": "2019-12-05",
+            "time": "11:30",
+            "duration": 60,
+            "place": "",
+            "guests": [],
+            "allDay": 0,
+            "open": false
+        }
+    ],
+
+    "terms": "<h1>POLÍTICAS DE PRIVACIDAD, TÉRMINOS Y CONDICIONES</h1><h1>TITULO 1</h1><h2>Titulo 2</h2><p class='ql-align-justify'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p><ol><li>Lorem ipsum dolor sit amet</li><li>Consectetur adipiscing elit, sed do</li><li>Eiusmod tempor incididunt ut labore et</li><li>Dolore magna aliqua.</li></ol><h3>Titulo 3</h3><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p><ul><li>Lorem ipsum dolor sit amet</li><li>Consectetur adipiscing elit, sed do</li><li>Eiusmod tempor incididunt ut labore et</li><li>Dolore magna aliqua.</li></ul><h4 class='ql-align-center'>Titulo 4</h4><p class='ql-align-center'>Ut enim ad minim veniam, quis nostrud exercitation ullamco4&nbsp;kittu5</p><h5 class='ql-align-right'>Titulo 5</h5><p class='ql-align-right'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim&nbsp;<a href='http://google.com/' rel='noopener noreferrer' target='_blank' style='color: rgb(72, 20, 101);'>ad minim veniam</a></p><h6>Titulo 6</h6><blockquote><s>Lorem ipsum dolor</s> sit amet, <u>consectetur adipiscing</u> elit, sed do <em>eiusmod tempor incididunt ut labore et dolore</em></blockquote>"
+}
