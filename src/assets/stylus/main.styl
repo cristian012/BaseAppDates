@@ -32,6 +32,8 @@ mixin-gradient-background(c1, c2)
     background: -webkit-linear-gradient(90deg, c1 0%, c2 100%) 
     background: linear-gradient(90deg, c1 0%, c2 100%) 
 
+// Padding and margin utilities
+
 .pgrs_m_0
     margin: 0 !important 
 .pgrs_p_0
@@ -70,7 +72,21 @@ mixin-gradient-background(c1, c2)
 .pgrs_p17
     font-size:17pt
 
+//base-convert()
 
+.pgrs_center
+    text-align: center
+
+.pgrs_semibold
+    font-family $font-semibold
+
+.pgrs_relative
+    position relative
+
+.pgrs_full_width
+    width 100%
+
+//_--------------
 #pgrs_bg_login
     background: #342DA0
     min-height: 100vh
@@ -93,7 +109,35 @@ mixin-gradient-background(c1, c2)
         height 285px
         right 0
         bottom 0
+    #pgrs_frame3
+        background url('../../assets/img/frame3.svg')
+        position absolute
+        background-repeat no-repeat
+        width 265px
+        height 285px
+        left 0
+        bottom 0
+    #pgrs_base_f
+        background url('../../assets/img/base_f.svg')
+        position absolute
+        background-repeat no-repeat
+        width 180px
+        height 75px
+        left 0
+        right 0
+        bottom 0
+        margin 0 auto
 
+#pgrs_circle_base
+    background url('../../assets/img/concentric_schema.svg')
+    position absolute
+    width 394px
+    height 394px
+    margin 0 auto
+    top -100%
+    left 0
+    right 0
+    background-repeat no-repeat
 
 // Component nav
 #toolbar
@@ -216,6 +260,7 @@ ul.pgrs_list_top_nav
             flex-direction: row 
             align-items: center 
             text-decoration: none 
+            font-size: 16px
             padding: 0.8em 1em 0.8em 1em 
             .prgs_icon_item
                 flex: 0 0 auto 
@@ -262,9 +307,38 @@ ul.pgrs_list_top_nav
                 width: 38px 
                 height: 38px 
             
-        
-                    
-        
+//_------------------------------
+//-- COMPONENT GLOBAL SEARCH BAR
+//-------------------------------
+
+.pgrs_finder_bar
+    background: rgba(255,255,255,0.1)
+    padding 0.4em 0.5em
+    border-radius 10em
+    .pgrs_input_cont
+        border-top-left-radius 10em
+        border-bottom-left-radius 10em
+        .pgrs_input_s
+            color inherit
+            .v-input__slot
+                border-top-left-radius 10em
+                border-bottom-left-radius 10em
+                padding 0em 1.3em
+                box-shadow none
+                font-family $font-semibold
+    .pgrs_btn_s
+        border-top-right-radius 10em
+        border-bottom-right-radius 10em
+        height: 100%
+        width 100%
+    .pgrs_input_filter
+        .v-input__slot
+            border-radius 0
+            font-family $font-semibold  
+            .v-input__append-inner
+                .v-input__icon--append
+                    .v-icon
+                        font-size: 10pt
 
 // Progresus
 // .progresus
