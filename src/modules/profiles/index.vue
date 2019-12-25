@@ -121,7 +121,7 @@
             return {
                 title: this.$t('Perfiles'),
                 meta: [
-                    { name: 'description', content: this.$t('Perfiles SalesMan CRM') }
+                    { name: 'description', content: this.$t('Perfiles Bookser') }
                 ]
             }
         },

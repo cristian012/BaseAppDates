@@ -34,7 +34,7 @@ Vue.use(Vuex);
 Vue.use(Vue2Filters);
 Vue.use(Vuetify, {
     theme: {
-        // SalesMan theme --------------
+        // Bookser theme --------------
         primary: '#342DA0',
         secondary: '#FCC250',
         accent: '#24B5F5',
@@ -116,7 +116,7 @@ export default function createApp() {
 
     const store = new Vuex.Store({
         state: {
-            title: 'SalesMan CRM',
+            title: 'Bookser',
             // title: 'Charlieboss',
             users: [],
         

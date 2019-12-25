@@ -3,7 +3,7 @@
         v-app( :dark="$store.state.darkTheme ? true : false ")
 
             div(v-show="$root.preload") 
-                | Cargando....
+                preloader() 
             
             main(v-show="!$root.preload")
                 router-view()
@@ -16,10 +16,8 @@
 <style src="@/assets/stylus/main.css"></style>
 
 <script>
-    const DefaultLayout = () =>
-        import(/* webpackChunkName: "layout-default" */ "@/layouts/DefaultLayout");
-    const BlankLayout = () =>
-        import(/* webpackChunkName: "layout-blank" */ "@/layouts/BlankLayout");
+    
+    import Preloader from './components/Preloader'
 
     export default {
         name: "App",
@@ -47,8 +45,7 @@
         },
 
         components: {
-            DefaultLayout,
-            BlankLayout,
+           Preloader
         },
 
         computed: {

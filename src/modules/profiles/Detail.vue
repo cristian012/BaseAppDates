@@ -67,7 +67,7 @@
             return {
                 title: this.$t('objo'),
                 meta: [
-                    { name: 'description', content: this.$t('objo SalesMan CRM') }
+                    { name: 'description', content: this.$t('objo Bookser') }
                 ]
             }
         },

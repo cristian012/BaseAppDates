@@ -5,7 +5,7 @@
         toolbar()
             template(slot='login')
                 div.pgrs_btn_login
-                    v-btn(color='accent' round @click='toggleLogin = !toggleLogin') Iniciar Sesión
+                    v-btn( color='accent' round @click='toggleLogin = !toggleLogin') Iniciar Sesión
 
                     div.pgrs_float_login.pgrs_px_0(v-show='toggleLogin')
                         v-form(ref='formLogin')
@@ -24,14 +24,12 @@
                                     color="secondary"
                                     hide-details
                                     @click:append="showPass = !showPass")
-                                v-btn(small flat dark block)
+                                v-btn(small flat dark block, @click="$refs.recoverPassword.open()").pgrs_btn_capitalize.mt-3
                                     v-icon(size='11px') $vuetify.icons.lock 
-                                    | &nbsp; Olvide mi contraseña
-                                v-btn.mt-2.mb-3.px-4(round depressed block color="secondary" @click="login" :loading="loaderSubmit") {{$t('Ingresar')}}
-                                div.white--text.pgrs_center ¿ya tienes una cuenta? 
+                                    | &nbsp; {{$t('Olvide mi contraseña')}}
+                                v-btn.mt-3.mb-3.px-4(round depressed block color="secondary" @click="login" :loading="loaderSubmit") {{$t('Ingresar')}}
+                                div.white--text.pgrs_center.pgrs_btn_capitalize ¿Ya tienes una cuenta? 
                                     a.secondary--text.pgrs_semibold Crear Una 
-                                //- .v-btns.justify-center
-                                //-     v-btn.px-4(round outline small depressed color="primary" @click="$refs.recoverPassword.open()") {{$t('Recuperar contraseña')}}
                                 //-     //v-btn.px-4(round flat small depressed color="primary" to="/register") {{$t('Registrarse')}}
 
         v-content
@@ -58,8 +56,8 @@
                                                 v-select.pgrs_input_filter(solo, dense, v-model='city' :items='cities' label='Ciudad', placeholder='Ciudad', hide-details)
                                             v-flex(lg2)
                                                 v-btn.pgrs_btn_s.pgrs_m_0(depressed, color='secondary')
-                                                    v-icon $vuetify.icons.search &nbsp;
-                                                    b Buscar
+                                                    v-icon $vuetify.icons.search 
+                                                    b &nbsp; Buscar
 
                             div.pgrs_full_width.pt-5
                                 v-layout(row, justify-center).white--text
@@ -135,7 +133,7 @@
             //         let data =  await this.sendPost(params)  
             //         if(data.response){
             //             this.$setItem('profile_log', data.profile).then((r)=>{
-            //                 this.$setItem('salesman', data.data, () => this.$router.push({ path: 'dashboard' }))
+            //                 this.$setItem('Bookser', data.data, () => this.$router.push({ path: 'dashboard' }))
             //             }) 
             //         }
             //         else{

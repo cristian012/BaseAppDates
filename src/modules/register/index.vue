@@ -4,7 +4,7 @@
             v-container.register(light fluid grid-list-lg)
                 .register__content
                     figure.register__logo.mb-4
-                        //- Logo SalesMan
+                        //- Logo Bookser
                         img(src="@/assets/img/logo-hor.svg" alt="Logo") 
                         //- Logo Memorial
                         //- img(src="@/assets/img/memorial/logo.svg" alt="Logo")
@@ -39,7 +39,7 @@
                                     light
                                     @click:append="showPassConfirm = !showPassConfirm")
                         p {{ $t('Al hacer click en Registrarse, aceptas los ') }}
-                            a(href="/terms" target="_blank") {{ $t('políticas de privacidad, términos y condiciones') }} 
+                            //-a(href="/terms" target="_blank") {{ $t('políticas de privacidad, términos y condiciones') }} 
                             | {{ $t('de') }} {{ $store.state.title }}
                         v-btn.mb-3.px-5(round depressed color="primary" @click="register") {{$t('Registrarse')}}
                         .v-btns.justify-center
@@ -59,7 +59,7 @@
             return {
                 title: this.$t('Registro'),
                 meta: [
-                    { name: 'description', content: this.$t('Registro SalesMan CRM') }
+                    { name: 'description', content: this.$t('Registro Bookser') }
                 ]
             }
         },

@@ -54,7 +54,7 @@
             return {
                 title: this.$t('Panel de control'),
                 meta: [
-                    { name: 'description', content: this.$t('Panel de control SalesMan CRM') }
+                    { name: 'description', content: this.$t('Panel de control Bookser') }
                 ]
             }
         },

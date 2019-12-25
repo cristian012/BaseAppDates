@@ -103,7 +103,7 @@
             return {
                 title: this.$t('Mi cuenta'),
                 meta: [
-                    { name: 'description', content: this.$t('Mi cuenta SalesMan CRM') }
+                    { name: 'description', content: this.$t('Mi cuenta Bookser') }
                 ]
             }
         },

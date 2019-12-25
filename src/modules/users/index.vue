@@ -140,7 +140,7 @@
             return {
                 title: this.$t('Usuarios'),
                 meta: [
-                    { name: 'description', content: this.$t('Usuarios SalesMan CRM') }
+                    { name: 'description', content: this.$t('Usuarios Bookser') }
                 ]
             }
         },

@@ -23,7 +23,7 @@
             return {
                 title: this.$t('Notificaciones'),
                 meta: [
-                    { name: 'description', content: this.$t('Notificaciones SalesMan CRM') }
+                    { name: 'description', content: this.$t('Notificaciones Bookser') }
                 ]
             }
         },

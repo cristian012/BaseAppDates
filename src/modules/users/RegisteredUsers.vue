@@ -155,7 +155,7 @@
             return {
                 title: this.$t('Usuarios inscritos'),
                 meta: [
-                    { name: 'description', content: this.$t('Usuarios inscritos SalesMan CRM') }
+                    { name: 'description', content: this.$t('Usuarios inscritos Bookser') }
                 ]
             }
         },

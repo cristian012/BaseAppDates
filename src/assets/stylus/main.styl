@@ -92,6 +92,37 @@ mixin-gradient-background(c1, c2)
 .pgrs_full_width
     width 100%
 
+.pgrs_btn_capitalize
+    .v-btn__content
+        text-transform: capitalize !important
+
+//---- PRELOADER COMPONENT
+
+#pgrs_global_preloader
+    transition: all ease 7s 
+    background: #342DA0
+    //filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#02a6ea",endColorstr="#1ecbd8",GradientType=1)  
+    position: fixed
+    top: 0
+    bottom: 0
+    left: 0
+    right: 0
+    z-index: 20
+    .inner-cont
+        position relative
+        top: 30%    
+        width: 250px
+        height: 200px
+        position: absolute
+        margin: 0 auto
+        left: 0
+        right: 0
+        color: white
+        .pgrs_progress
+            position relative
+
+
+
 //_--------------
 #pgrs_bg_login
     background: #342DA0

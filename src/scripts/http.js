@@ -4,7 +4,7 @@ const API_URL = Iko.API_URL
 
 let api = (Vue, cb) => {
 
-	return Vue.$getItem('salesman').then((token) => {
+	return Vue.$getItem('Bookser').then((token) => {
 
         token = token ? token : ''
         return cb(axios.create({
@@ -13,7 +13,7 @@ let api = (Vue, cb) => {
                 'Content-Type' : 'application/x-www-form-urlencoded',  
 				common: {
 					'Accept'              : 'application/json',
-					'X-Token-SALESMAN'    : token
+					'X-Token-Bookser'    : token
 				},
 				post: {
 					'Content-Type': 'multipart/form-data'
