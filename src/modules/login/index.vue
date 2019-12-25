@@ -7,8 +7,8 @@
         v-content
             v-container(fluid fill-height)
                 v-layout(row wrap fill-height)
-                    v-flex(lg3)
-                    v-flex(lg6)
+                    v-flex(lg2)
+                    v-flex(lg8)
                         v-layout(column, align-center, justify-center fill-height)
                             div.pgrs_relative.pgrs_full_width
                                 #pgrs_circle_base
@@ -18,14 +18,14 @@
                                 v-flex.white--text.pgrs_center.pgrs_p14 La forma inteligente de reservar citas
                                 v-flex.secondary--text.pgrs_center.pgrs_semibold.pgrs_p14 + 100 Servicios disponibles
                             
-                            div.pgrs_full_width.pt-5
+                            div.pgrs_full_width.pt-4
                                 v-layout.pgrs_finder_bar(row)
                                     v-flex.pgrs_input_cont
                                         v-layout(row, wrap)
-                                            v-flex(lg6)
+                                            v-flex(lg7)
                                                 v-text-field.pgrs_input_s(solo, label='Busca',placeholder='Filtra aquí lo que buscas...', hide-details)
-                                            v-flex(lg4)
-                                                v-select.pgrs_input_filter(solo, dense, :items='cities' label='Ciudad', placeholder='-selecciona-', hide-details)
+                                            v-flex(lg3)
+                                                v-select.pgrs_input_filter(solo, dense, :items='cities' label='Ciudad', placeholder='Ciudad', hide-details)
                                             v-flex(lg2)
                                                 v-btn.pgrs_btn_s.pgrs_m_0(depressed, color='secondary')
                                                     v-icon $vuetify.icons.search
@@ -38,7 +38,7 @@
                                     div
                                         a.white--text.pgrs_p10.px-4 Términos
                             
-                    v-flex(lg3)
+                    v-flex(lg2)
 
         #pgrs_frame1
         #pgrs_frame2

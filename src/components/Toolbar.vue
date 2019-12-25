@@ -25,27 +25,32 @@
 
                     //- cofiguration and notification sec
                     v-flex.pgrs_control_sec
-                        v-layout(row justify-end)
+                        v-btn(color='accent') Iniciar Sesión
+                        v-layout(v-show='false' row justify-end)
                             v-flex.pgrs_cont_btn()
                                 v-btn.pgrs_mx_0(flat, icon, dark)
-                                    v-icon $vuetify.icons.notifications
+                                    v-icon(size='20px') $vuetify.icons.notifications
 
                             v-flex.pgrs_access-profile(shrink)
-                                v-menu(v-model='profileMenu', bottom left)
-                                    template(v-slot:activator='{ on }')
-                                        div.pgrs_profile(v-on='on')
-                                            div.pgrs_photo
-                                                img(src="@/assets/img/profile_dummy.png" width='100%')
-                                    v-list(dense)
-                                        //- v-list-tile()
-                                        //-     v-list-tile-title Mi cuenta
-                                        //- v-list-tile()
-                                        //-     v-list-tile-title Ayuda
-                                        v-list-tile(href='https://helpdesk.progresus.co/open.php' target='_blank')
-                                            v-list-tile-title Reportar un problema
-                                        v-divider
-                                        v-list-tile(to='/login')
-                                            v-list-tile-title Salir
+                                v-layout(row, align-center)
+                                    v-layout(column).white--text.pr-2
+                                        div.pgrs_bold Juan Rivera
+                                        v-menu(v-model='profileMenu', bottom left)
+                                            template(v-slot:activator='{ on }')
+                                                div.pgrs_access_menu(v-on='on') Mi cuenta
+                                            v-list(dense)
+                                                //- v-list-tile()
+                                                //-     v-list-tile-title Mi cuenta
+                                                //- v-list-tile()
+                                                //-     v-list-tile-title Ayuda
+                                                v-list-tile(href='https://helpdesk.progresus.co/open.php' target='_blank')
+                                                    v-list-tile-title Reportar un problema
+                                                v-divider
+                                                v-list-tile(to='/login')
+                                                    v-list-tile-title Salir
+                                    v-layout.pgrs_profile
+                                        div.pgrs_photo
+                                            img(src="@/assets/img/profile_dummy.svg" width='100%')
         //----------------------------------------------
         //-- NAVBAR REOLUTIONS (MD SM XS)
         //----------------------------------------------

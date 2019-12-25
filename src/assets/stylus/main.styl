@@ -80,6 +80,9 @@ mixin-gradient-background(c1, c2)
 .pgrs_semibold
     font-family $font-semibold
 
+.pgrs_bold
+    font-family $font-bold
+
 .pgrs_relative
     position relative
 
@@ -291,18 +294,32 @@ ul.pgrs_list_top_nav
         flex: 1 1 auto   
     
     .pgrs_access-profile
+        .pgrs_access_menu
+            position: relative
+            &::after
+                content: '\25bc' 
+                color: white 
+                height 8px 
+                display: flex 
+                flex: 1 1 auto 
+                line-height: 0 
+                position: absolute 
+                width: 10px 
+                right: -0.3em 
+                top: 1em 
+                font-size: 8pt 
         .pgrs_profile
             width: 44px !important 
             height:44px !important 
-            background: rgba(255,255,255,0.1) 
+            background: rgba(255,255,255,0.3) 
             position relative 
-            border-radius: $button-border-radius + 3 
+            border-radius: 10em 
             padding: .18em 
             cursor: pointer 
             
             .pgrs_photo
-                background: #333 
-                border-radius: $button-border-radius + 3 
+                background: #FCC250
+                border-radius: 10em 
                 overflow hidden 
                 width: 38px 
                 height: 38px 
