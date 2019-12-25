@@ -42,20 +42,14 @@ Vue.use(Vuetify, {
         info: '#177398',
         success: '#179875',
         warning: '#ffbe00',
-
-        // Memorial theme --------------- 
-        // primary: '#481465',
-        // secondary: '#CC9A44',
-        // accent: '#E2B77D',
-        // error: '#f75353',
-        // info: '#177398',
-        // success: '#4cd4a5',
-        // warning: '#ffbe00',
     },
     iconfont: 'fa',
     icons: { 
         'search': 'fa-search',
-        'notifications': 'far fa-bell',   
+        'notifications': 'far fa-bell',
+        'show': 'far fa-eye',
+        'hide': 'far fa-eye-slash',
+        'lock': 'fas fa-lock'
     }
 });
 

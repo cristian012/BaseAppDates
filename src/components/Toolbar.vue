@@ -25,7 +25,10 @@
 
                     //- cofiguration and notification sec
                     v-flex.pgrs_control_sec
-                        v-btn(color='accent') Iniciar Sesión
+                        slot(name='login')
+                        
+                        //-- Panel access user session active
+                        //---------------------------------------
                         v-layout(v-show='false' row justify-end)
                             v-flex.pgrs_cont_btn()
                                 v-btn.pgrs_mx_0(flat, icon, dark)

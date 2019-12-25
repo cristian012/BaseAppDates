@@ -3,6 +3,36 @@
         
         //- Compoent nav aplication
         toolbar()
+            template(slot='login')
+                div.pgrs_btn_login
+                    v-btn(color='accent' round @click='toggleLogin = !toggleLogin') Iniciar Sesión
+
+                    div.pgrs_float_login.pgrs_px_0(v-show='toggleLogin')
+                        v-form(ref='formLogin')
+                            v-container
+                                v-text-field(dark v-model="email" :label="$t('Correo Electrónico')" :placeholder="$t('Dirección email')" color="secondary" :rules="[rules.required, rules.email]" required)
+                                v-text-field(
+                                    dark
+                                    v-model="password"
+                                    :append-icon="showPass ? '$vuetify.icons.hide' : '$vuetify.icons.show'"
+                                    :rules="[rules.required, rules.min]"
+                                    :type="showPass ? 'text' : 'password'"
+                                    :label="$t('Contraseña')"
+                                    :placeholder="$t('password')"
+                                    :hint="$t('Al menos 8 carácteres')"
+                                    browser-autocomplete="new-password"
+                                    color="secondary"
+                                    hide-details
+                                    @click:append="showPass = !showPass")
+                                v-btn(small flat dark block)
+                                    v-icon(size='11px') $vuetify.icons.lock 
+                                    | &nbsp; Olvide mi contraseña
+                                v-btn.mt-2.mb-3.px-4(round depressed block color="secondary" @click="login" :loading="loaderSubmit") {{$t('Ingresar')}}
+                                div.white--text.pgrs_center ¿ya tienes una cuenta? 
+                                    a.secondary--text.pgrs_semibold Crear Una 
+                                //- .v-btns.justify-center
+                                //-     v-btn.px-4(round outline small depressed color="primary" @click="$refs.recoverPassword.open()") {{$t('Recuperar contraseña')}}
+                                //-     //v-btn.px-4(round flat small depressed color="primary" to="/register") {{$t('Registrarse')}}
 
         v-content
             v-container(fluid fill-height)
@@ -25,10 +55,12 @@
                                             v-flex(lg7)
                                                 v-text-field.pgrs_input_s(solo, label='Busca',placeholder='Filtra aquí lo que buscas...', hide-details)
                                             v-flex(lg3)
-                                                v-select.pgrs_input_filter(solo, dense, :items='cities' label='Ciudad', placeholder='Ciudad', hide-details)
+                                                v-select.pgrs_input_filter(solo, dense, v-model='city' :items='cities' label='Ciudad', placeholder='Ciudad', hide-details)
                                             v-flex(lg2)
                                                 v-btn.pgrs_btn_s.pgrs_m_0(depressed, color='secondary')
-                                                    v-icon $vuetify.icons.search
+                                                    v-icon $vuetify.icons.search &nbsp;
+                                                    b Buscar
+
                             div.pgrs_full_width.pt-5
                                 v-layout(row, justify-center).white--text
                                     div
@@ -45,32 +77,8 @@
         #pgrs_frame3
         #pgrs_base_f
         #pgrs_core_omp
-                //- Form login 
-                //- v-content(v-show='false')
-                //-     v-container.login(fluid)
-                //-         .login__content
-                //-             h1 {{$t('Iniciar sesión')}}
-                //-             v-form(ref="form" v-model="valid" lazy-validation)
-                //-                 v-text-field(v-model="email" :label="$t('Correo electrónico')" light color="success" :rules="[rules.required, rules.email]" required)
-                //-                 v-text-field(
-                //-                     v-model="password"
-                //-                     :append-icon="showPass ? '$vuetify.icons.hide' : '$vuetify.icons.show'"
-                //-                     :rules="[rules.required, rules.min]"
-                //-                     :type="showPass ? 'text' : 'password'"
-                //-                     :label="$t('Contraseña')"
-                //-                     :hint="$t('Al menos 8 carácteres')"
-                //-                     browser-autocomplete="new-password"
-                //-                     light
-                //-                     color="success"
-                //-                     @click:append="showPass = !showPass")
-                //-                 v-btn.mt-4.mb-3.px-4(round depressed block color="primary" @click="login" :loading="loaderSubmit") {{$t('Ingresar')}}
-                //-                 .v-btns.justify-center
-                //-                     v-btn.px-4(round outline small depressed color="primary" @click="$refs.recoverPassword.open()") {{$t('Recuperar contraseña')}}
-                //-                     //v-btn.px-4(round flat small depressed color="primary" to="/register") {{$t('Registrarse')}}
-                //-             v-divider.my-3
-                //-             footer-component
-
-                //- recover-password(ref="recoverPassword")
+        
+        recover-password(ref="recoverPassword")
 </template>
 
 <script>
@@ -96,6 +104,8 @@
                 valid: true,
                 email: '',
                 password: '',
+                city: '',
+                toggleLogin: false,
 
                 // Mostrar contraseña
                 showPass: false,
