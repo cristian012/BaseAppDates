@@ -1,4 +1,43 @@
 {
+    
+    "PopularServices":[
+        {
+            "id": "001",
+            "imgUrl": "ortodoncia.png",
+            "logoC": "logo_sonria.png",
+            "subtitle": "Clínicas Sonría",
+            "title": "Procedimiento Ortodoncia",
+            "location": "Bogotá DC.",
+            "tags": ["Bienestar", "odontología"]
+        },
+        {
+            "id": "002",
+            "imgUrl": "pediatra.png",
+            "logoC": "logo_clinic.png",
+            "subtitle": "Clínica High Care",
+            "title": "Pediatría Especializada",
+            "location": "Bogotá DC.",
+            "tags": ["Bienestar", "salud"]
+        },
+        {
+            "id": "003",
+            "imgUrl": "legal.png",
+            "logoC": "logo_legal.png",
+            "subtitle": "Buffete Conejo Abogados",
+            "title": "Asesoría Legal",
+            "location": "Bogotá DC.",
+            "tags": ["asesoría", "abogados"]
+        },
+        {
+            "id": "004",
+            "imgUrl": "ingles.png",
+            "logoC": "logo_collage.png",
+            "subtitle": "Peace Corps PREP",
+            "title": "Maestro de Inglés",
+            "location": "Bogotá DC.",
+            "tags": ["educación", "idiomas"]
+        }
+    ],
     "userData": {
         "name": "German Forero Fonseca",
         "user_name": "German Forero",
@@ -242,212 +281,6 @@
         { "country": "Zimbabue, Zimbabwe", "symbol": "$", "iso": "ZWL", "value": "189" }
     ],
 
-    "clients": [
-        {
-            "uuid": "1",
-            "name": "Montes Nascetur Ridiculus LLC",
-            "id": "",
-            "email": "",
-            "phone": "",
-            "address": "",
-            "contact": [],
-            "opportunity": [],
-            "status": false
-        },
-        {
-            "uuid": "2",
-            "name": "Dolor Elit Pellentesque Industries",
-            "id": "16180610-6645",
-            "email": "quis.pede@aliquet.co.uk",
-            "phone": "(997) 243-2458",
-            "address": "587-4038 Feugiat Street",
-            "contact": [1, 3, 6],
-            "opportunity": [1, 4, 6, 7, 8, 9],
-            "status": false
-        },
-        {
-            "uuid": "3",
-            "name": "Eros Nam Consequat Associates",
-            "id": "16410515-5909",
-            "email": "orci@Nulla.ca",
-            "phone": "(655) 136-4150",
-            "address": "665 Sollicitudin St.",
-            "contact": [9],
-            "opportunity": [1],
-            "status": false
-        },
-        {
-            "uuid": "4",
-            "name": "Vitae Odio Sagittis Limited",
-            "id": "16300330-4957",
-            "email": "venenatis@cursusNunc.edu",
-            "phone": "(902) 885-9846",
-            "address": "P.O. Box 363, 2377 Id, Av.",
-            "contact": [1],
-            "opportunity": [1],
-            "status": true
-        },
-        {
-            "uuid": "5",
-            "name": "Blandit At PC",
-            "id": "16260516-7838",
-            "email": "posuere.vulputate@sapien.co.uk",
-            "phone": "(757) 142-4203",
-            "address": "734-4629 Quam. St.",
-            "contact": [9],
-            "opportunity": [1],
-            "status": true
-        },
-        {
-            "uuid": "6",
-            "name": "Dapibus Quam Quis PC",
-            "id": "16460608-8930",
-            "email": "Sed.dictum@Nunc.ca",
-            "phone": "(285) 125-2955",
-            "address": "1496 Ullamcorper, Ave",
-            "contact": [7],
-            "opportunity": [1],
-            "status": true
-        },
-        {
-            "uuid": "7",
-            "name": "Vestibulum Accumsan Corporation",
-            "id": "16690104-5200",
-            "email": "mi@sedsem.edu",
-            "phone": "(571) 387-4330",
-            "address": "7700 Lobortis Av.",
-            "contact": [4],
-            "opportunity": [1],
-            "status": true
-        },
-        {
-            "uuid": "8",
-            "name": "At Arcu Vestibulum PC",
-            "id": "16541209-3105",
-            "email": "luctus.ut.pellentesque@adipiscingMauris.co.uk",
-            "phone": "(179) 408-0061",
-            "address": "273-1783 Tincidunt, St.",
-            "contact": [7],
-            "opportunity": [1],
-            "status": false
-        },
-        {
-            "uuid": "9",
-            "name": "Curabitur Consequat Inc.",
-            "id": "16470306-5781",
-            "email": "mi@dictumauguemalesuada.org",
-            "phone": "(659) 541-0226",
-            "address": "403-2281 Imperdiet Ave",
-            "contact": [6],
-            "opportunity": [1],
-            "status": true
-        },
-        {
-            "uuid": "10",
-            "name": "Leo Cras Institute",
-            "id": "16060413-3652",
-            "email": "et@lobortistellus.edu",
-            "phone": "(396) 849-6707",
-            "address": "Ap #646-2776 A St.",
-            "contact": [10],
-            "opportunity": [1],
-            "status": true
-        }
-    ],
-
-    "contacts": [
-        {
-            "uuid": "1",
-            "name": "Channing N. Howell",
-            "email": "",
-            "phone": "",
-            "job": "",
-            "client": [],
-            "status": false
-        },
-        {
-            "uuid": "2",
-            "name": "Beck Z. Bullock",
-            "email": "ornare.tortor@dolor.ca",
-            "phone": "(702) 296-5189",
-            "job": "Diseñador",
-            "client": [1, 3, 6],
-            "status": false
-        },
-        {
-            "uuid": "3",
-            "name": "Vernon E. Davenport",
-            "email": "et.ipsum@nec.org",
-            "phone": "(622) 563-3029",
-            "job": "Ingeniero",
-            "client": [2, 3],
-            "status": false
-        },
-        {
-            "uuid": "4",
-            "name": "Gavin J. May",
-            "email": "lorem.ut@sollicitudin.co.uk",
-            "phone": "(888) 102-9114",
-            "job": "Ingeniero",
-            "client": [3, 4, 4, 6],
-            "status": true
-        },
-        {
-            "uuid": "5",
-            "name": "Lars J. Kemp",
-            "email": "netus.et.malesuada@auctor.net",
-            "phone": "(251) 712-6003",
-            "job": "Vendedor",
-            "client": [7, 8],
-            "status": true
-        },
-        {
-            "uuid": "6",
-            "name": "Slade X. Willis",
-            "email": "gravida@commodoat.net",
-            "phone": "(194) 762-0208",
-            "job": "Diseñador",
-            "client": [9, 10],
-            "status": false
-        },
-        {
-            "uuid": "7",
-            "name": "Cheyenne P. Oneill",
-            "email": "Fusce.aliquam.enim@Mauris.org",
-            "phone": "(267) 578-8603",
-            "job": "Vendedor",
-            "client": [1],
-            "status": false
-        },
-        {
-            "uuid": "8",
-            "name": "Burton U. Avila",
-            "email": "eu.tellus@purus.edu",
-            "phone": "(448) 857-0310",
-            "job": "Vendedor",
-            "client": [10],
-            "status": true
-        },
-        {
-            "uuid": "9",
-            "name": "Declan A. Cardenas",
-            "email": "lobortis.ultrices@eget.ca",
-            "phone": "(338) 627-2741",
-            "job": "Diseñador",
-            "client": [4, 6],
-            "status": true
-        },
-        {
-            "uuid": "10",
-            "name": "Ruby I. Arnold",
-            "email": "lobortis.quam@eunullaat.co.uk",
-            "phone": "(490) 615-2993",
-            "job": "Gerente",
-            "client": [1, 3],
-            "status": false
-        }
-    ],
-
     "users": [
         {
             "uuid": "1",
@@ -636,23 +469,6 @@
         }
     ],
 
-    "phases": [
-        {
-            "value": 1,
-            "name": "Perdida",
-            "color": "error"
-        },
-        {
-            "value": 2,
-            "name": "En progreso",
-            "color": "warning"
-        },
-        {
-            "value": 3,
-            "name": "Ganada",
-            "color": "success"
-        }
-    ],
 
     "status": [
         { 
@@ -672,126 +488,6 @@
         { "text": "Fecha Desc.", "value": 3 }
     ],
 
-    "activities": [
-        {
-            "title": "Actividad A",
-            "details": "Esta es una actividad importante",
-            "opportunity": "1",
-            "user_manager": "1",
-            "date": "2019-12-01",
-            "time": "09:00",
-            "duration": 60,
-            "allDay": 0,
-            "phase": 1,
-            "open": false
-        },
-        {
-            "title": "Actividad B",
-            "details": "Actividad para todo el día",
-            "opportunity": "2",
-            "user_manager": "2",
-            "date": "2019-12-02",
-            "time": "",
-            "duration": "",
-            "allDay": 1,
-            "phase": 1,
-            "open": false
-        },
-        {
-            "title": "Actividad C",
-            "details": "Hacer una llamada",
-            "opportunity": "3",
-            "user_manager": "3",
-            "date": "2019-12-05",
-            "time": "15:30",
-            "duration": 60,
-            "allDay": 0,
-            "phase": 2,
-            "open": false
-        }
-    ],
-
-    "phasesActivity": [
-        { 
-            "value": 1,
-            "name": "Por iniciar"
-        },
-        { 
-            "value": 2,
-            "name": "Finalizada"
-        }
-    ],
-
-    "events": [
-        {
-            "title": "Evento A",
-            "details": "Esta es una visita importante",
-            "date": "2019-12-01",
-            "time": "09:00",
-            "duration": 60,
-            "place": "Calle 50 # 3 - 52",
-            "guests": [
-                {
-                    "text": "usuario@email.com"
-                }
-            ],
-            "allDay": 0,
-            "open": false
-        },
-        {
-            "title": "Evento B",
-            "details": "Actividad para todo el día",
-            "date": "2019-12-02",
-            "time": "",
-            "duration": "",
-            "place": "Calle 50 # 3 - 52",
-            "guests": [
-                {
-                    "text": "usuario@email.com"
-                },
-                {
-                    "text": "persona@email.com"
-                },
-                {
-                    "text": "empleado@email.com"
-                },
-                {
-                    "text": "gerente@email.com"
-                }
-            ],
-            "allDay": 1,
-            "open": false
-        },
-        {
-            "title": "Evento C",
-            "details": "Reunión general",
-            "date": "2019-12-05",
-            "time": "15:30",
-            "duration": 60,
-            "place": "Calle 50 # 3 - 52",
-            "guests": [
-                {
-                    "text": "usuario@email.com"
-                },
-                {
-                    "text": "persona@email.com"
-                }
-            ],
-            "allDay": 0,
-            "open": false
-        },
-        {
-            "title": "Evento H",
-            "details": "",
-            "date": "2019-12-05",
-            "time": "11:30",
-            "duration": 60,
-            "place": "",
-            "guests": [],
-            "allDay": 0,
-            "open": false
-        }
-    ],
 
     "terms": "<h1>POLÍTICAS DE PRIVACIDAD, TÉRMINOS Y CONDICIONES</h1><h1>TITULO 1</h1><h2>Titulo 2</h2><p class='ql-align-justify'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p><ol><li>Lorem ipsum dolor sit amet</li><li>Consectetur adipiscing elit, sed do</li><li>Eiusmod tempor incididunt ut labore et</li><li>Dolore magna aliqua.</li></ol><h3>Titulo 3</h3><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p><ul><li>Lorem ipsum dolor sit amet</li><li>Consectetur adipiscing elit, sed do</li><li>Eiusmod tempor incididunt ut labore et</li><li>Dolore magna aliqua.</li></ul><h4 class='ql-align-center'>Titulo 4</h4><p class='ql-align-center'>Ut enim ad minim veniam, quis nostrud exercitation ullamco4&nbsp;kittu5</p><h5 class='ql-align-right'>Titulo 5</h5><p class='ql-align-right'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim&nbsp;<a href='http://google.com/' rel='noopener noreferrer' target='_blank' style='color: rgb(72, 20, 101);'>ad minim veniam</a></p><h6>Titulo 6</h6><blockquote><s>Lorem ipsum dolor</s> sit amet, <u>consectetur adipiscing</u> elit, sed do <em>eiusmod tempor incididunt ut labore et dolore</em></blockquote>"
 }

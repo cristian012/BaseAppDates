@@ -63,7 +63,6 @@ import FilterComponent from '@/components/Filter.vue'
 import BtnsFloating from '@/components/BtnsFloating.vue'
 import BackToTop from '@/components/BackToTop.vue'
 import Confirm from '@/components/Confirm.vue'
-import CountResults from '@/components/CountResults.vue'
 import NotFound from '@/components/NotFound.vue'
 import InfiniteLoading from '@/components/InfiniteLoading.vue'
 import Alert from '@/components/Alert.vue'
@@ -75,7 +74,6 @@ Vue.component('FilterComponent', FilterComponent)
 Vue.component('BtnsFloating', BtnsFloating)
 Vue.component('BackToTop', BackToTop)
 Vue.component('Confirm', Confirm)
-Vue.component('CountResults', CountResults)
 Vue.component('NotFound', NotFound)
 Vue.component('InfiniteLoading', InfiniteLoading)
 Vue.component('Alert', Alert)

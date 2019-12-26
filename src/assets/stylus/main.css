@@ -10483,7 +10483,7 @@ h1 {
 }
 .v-sheet {
   background: #f9f9f9;
-  border-radius: 0 6px 6px 6px;
+  border-radius: 6px 6px 6px 6px;
   position: relative;
   margin-top: 16px;
   display: flex;
@@ -14123,4 +14123,58 @@ ul.pgrs_list_top_nav li a .prgs_label_item {
 }
 .pgrs_cont_favorites .pgrs_dynamic_content_fill_open {
   max-height: 1000px;
+}
+.pgrs_card-service {
+  overflow: hidden;
+}
+.pgrs_card-service .pgrs_cont_img {
+  height: 138px;
+  background: #28237c;
+}
+.pgrs_card-service .pgrs_cont_img img {
+  height: 100%;
+}
+.pgrs_card-service .pgrs_cont_circ {
+  position: relative;
+  height: 1px;
+}
+.pgrs_card-service .pgrs_cont_circ .pgrs_circle_mask {
+  overflow: hidden;
+  width: 55px;
+  height: 55px;
+  position: absolute;
+  background: #fff;
+  box-shadow: 0px 0px 4px #000;
+  border-radius: 100%;
+  right: 2em;
+  top: -28px;
+}
+.pgrs_card-service .pgrs_cont_circ .pgrs_circle_mask img {
+  width: 102%;
+  margin-left: -1%;
+}
+.pgrs_card-service .pgrs_cont_data_card {
+  background: #fff;
+  padding: 1em;
+}
+.pgrs_card-service .pgrs_cont_data_card .pgrs_subtitle_card {
+  color: #342da0;
+  text-transform: capitalize;
+  font-family: 'Proxima Nova Sb', sans-serif;
+}
+.pgrs_card-service .pgrs_cont_data_card .pgrs_title_card {
+  font-family: 'Proxima Nova Sb', sans-serif;
+  text-transform: capitalize;
+  font-size: 12pt;
+}
+.pgrs_card-service .pgrs_cont_data_card .pgrs_sec_title {
+  font-size: 9pt;
+}
+.pgrs_card-service .pgrs_cont_data_card .pgrs_chip_tag {
+  padding: 0.2em 0.7em;
+  background: #fcc250;
+  border-radius: 10em;
+  margin-right: 0.3em;
+  font-size: 9.5pt;
+  text-transform: capitalize;
 }

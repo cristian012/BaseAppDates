@@ -27,8 +27,8 @@
     export default {
         data() {
             return {
-                city:'',
-                  cities:[
+                city: 'Bogotá DC',
+                cities:[
                     'Bogotá DC',
                     'Barranquilla',
                     'Bucaramanga',

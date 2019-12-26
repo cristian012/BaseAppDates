@@ -12,6 +12,7 @@ $font-bold = 'Proxima Nova Bl', sans-serif
 $height-navigator = 104px 
 
 $color-primary = #342DA0
+$color-secondary = #FCC250
 
 // Utility mixins
 
@@ -496,3 +497,52 @@ ul.pgrs_list_top_nav
         overflow hidden
     .pgrs_dynamic_content_fill_open
         max-height 1000px
+
+//-----------------------------------
+//- COMPONENT CARD SERVICE
+//-----------------------------------
+
+.pgrs_card-service
+    overflow hidden
+    .pgrs_cont_img
+        height 138px
+        background darken($color-primary, 9)
+        img 
+            height 100%
+    .pgrs_cont_circ
+        position relative
+        height 1px
+        .pgrs_circle_mask
+            overflow hidden
+            width 55px
+            height 55px
+            position: absolute
+            background white
+            box-shadow 0px 0px 4px rgb(0,0,0,0.1)
+            border-radius 100%
+            right 2em
+            top -28px
+            img 
+                width 102%
+                margin-left -1%
+
+    .pgrs_cont_data_card
+        background white
+        padding: 1em
+        .pgrs_subtitle_card
+            color $color-primary
+            text-transform capitalize
+            font-family: $font-semibold
+        .pgrs_title_card
+            font-family: $font-semibold
+            text-transform capitalize
+            font-size 12pt
+        .pgrs_sec_title
+            font-size: 9pt
+        .pgrs_chip_tag 
+            padding: 0.2em 0.7em
+            background $color-secondary
+            border-radius 10em 
+            margin-right: 0.3em
+            font-size: 9.5pt
+            text-transform capitalize
