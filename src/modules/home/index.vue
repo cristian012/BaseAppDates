@@ -9,13 +9,14 @@
                     v-flex(xl8 lg8)
                         global-search-bar()
                     v-flex(xl2 lg2)
-                
-               
-
-        footer-component(:drawer="$store.state.drawer" :mini="$store.state.mini")
-
-        btns-floating(left bottom :drawer="$store.state.drawer" :mini="$store.state.mini")
-            back-to-top
+            
+            v-container(fluid)
+                v-flex
+                    v-container(grid-list-lg)
+                        v-layout(row wrap)
+                            v-flex( v-for='(item, index) in 4', :key='index' xl2, lg3, md4, sm4, xs12)
+                                v-card(height='90px')
+                                    | Card Info
 
         confirm(
             ref="changeCurrency"

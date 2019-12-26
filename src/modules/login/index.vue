@@ -45,6 +45,7 @@
                         //- Component Global search bar
                         global-search-bar()
                             template(slot='main-logo')
+                                div(style='height: 100px')
                                 #pgrs_circle_base
                                 v-flex.white--text.pgrs_center.mb-4
                                     picture
