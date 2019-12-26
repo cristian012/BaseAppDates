@@ -32,8 +32,11 @@
                         //---------------------------------------
                         v-layout(v-else row justify-end)
                             v-flex.pgrs_cont_btn()
-                                v-btn.pgrs_mx_0(flat, icon, dark)
+                                v-btn(flat, icon, dark)
                                     v-icon(size='20px') $vuetify.icons.notifications
+                                
+                                v-btn(flat, icon, dark)
+                                    v-icon(size='20px') $vuetify.icons.gear
 
                             v-flex.pgrs_access-profile(shrink)
                                 v-layout(row, align-center)

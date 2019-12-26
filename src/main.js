@@ -52,7 +52,8 @@ Vue.use(Vuetify, {
         'lock': 'fas fa-lock',
         'outline_star': 'far fa-star',
         'chevron_up': 'fas fa-chevron-up',
-        'chevron_down': 'fas fa-chevron-down'
+        'chevron_down': 'fas fa-chevron-down',
+        'gear': 'fas fa-cog'
     }
 });
 
