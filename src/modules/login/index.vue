@@ -31,7 +31,7 @@
                                 v-btn(small flat dark block, @click="$refs.recoverPassword.open()").pgrs_btn_capitalize.mt-3
                                     v-icon(size='11px') $vuetify.icons.lock 
                                     | &nbsp; {{$t('Olvide mi contraseña')}}
-                                v-btn.mt-3.mb-3.px-4.pgrs_secondary_btn_color(round depressed block color="secondary" @click="login" :loading="loaderSubmit") {{$t('Ingresar')}}
+                                v-btn.mt-3.mb-3.px-4.pgrs_secondary_btn_color(round depressed block color="secondary" to='/' :loading="loaderSubmit") {{$t('Ingresar')}}
                                 div.white--text.pgrs_center.pgrs_btn_capitalize ¿Ya tienes una cuenta? 
                                     a.secondary--text.pgrs_semibold Crear Una 
                                 //-     //v-btn.px-4(round flat small depressed color="primary" to="/register") {{$t('Registrarse')}}
@@ -39,40 +39,27 @@
         v-content
             v-container(fluid fill-height)
                 v-layout(row wrap fill-height)
-                    v-flex(lg2)
-                    v-flex(lg8)
-                        v-layout(column, align-center, justify-center fill-height)
-                            div.pgrs_relative.pgrs_full_width
+                    v-flex(xl2 lg2)
+                    v-flex(xl8 lg8)
+
+                        //- Component Global search bar
+                        global-search-bar()
+                            template(slot='main-logo')
                                 #pgrs_circle_base
                                 v-flex.white--text.pgrs_center.mb-4
                                     picture
                                         img(src='@/assets/img/logo_bookser.svg')
-                                v-flex.white--text.pgrs_center.pgrs_p14 La forma inteligente de reservar citas
-                                v-flex.secondary--text.pgrs_center.pgrs_semibold.pgrs_p14 + 100 Servicios disponibles
+                            template(slot='footer-bar')
+                                div.pgrs_full_width.pt-5
+                                    v-layout(row, justify-center).white--text
+                                        div
+                                            a.white--text.pgrs_p10.px-4 Políticas
+                                        div
+                                            a.white--text.pgrs_p10.px-4 Bookser - 2019
+                                        div
+                                            a.white--text.pgrs_p10.px-4 Términos
                             
-                            div.pgrs_full_width.pt-4
-                                v-layout.pgrs_finder_bar(row)
-                                    v-flex.pgrs_input_cont
-                                        v-layout(row, wrap)
-                                            v-flex(lg7)
-                                                v-text-field.pgrs_input_s(solo, label='Busca',placeholder='Filtra aquí lo que buscas...', hide-details)
-                                            v-flex(lg3)
-                                                v-select.pgrs_input_filter(solo, dense, v-model='city' :items='cities' label='Ciudad', placeholder='Ciudad', hide-details)
-                                            v-flex(lg2)
-                                                v-btn.pgrs_btn_s.pgrs_m_0.pgrs_secondary_btn_color(depressed, color='secondary')
-                                                    v-icon $vuetify.icons.search 
-                                                    b &nbsp; Buscar
-
-                            div.pgrs_full_width.pt-5
-                                v-layout(row, justify-center).white--text
-                                    div
-                                        a.white--text.pgrs_p10.px-4 Políticas
-                                    div
-                                        a.white--text.pgrs_p10.px-4 Bookser - 2019
-                                    div
-                                        a.white--text.pgrs_p10.px-4 Términos
-                            
-                    v-flex(lg2)
+                    v-flex(xl2 lg2)
 
         #pgrs_frame1
         #pgrs_frame2
@@ -87,6 +74,7 @@
     import RecoverPassword from './components/RecoverPassword.vue'
     import app from '../../mixins/app'
     import Toolbar from '../../components/Toolbar'
+    import GlobalSearchBar from '../../components/GlogalSearchBar'
 
     export default {
         mixins : [app],
@@ -170,7 +158,7 @@
         },
 
         components: {
-            RecoverPassword, Toolbar
+            RecoverPassword, Toolbar, GlobalSearchBar
         }
     };
 </script>

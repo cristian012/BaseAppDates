@@ -3,7 +3,7 @@
         //----------------------------------------------
         //-- NAVBAR REOLUTIONS (LG XS)
         //----------------------------------------------
-        v-flex.pgrs_top_navbar.pgrs_gradient_blue.hidden-sm-and-down
+        v-flex.pgrs_top_navbar.pgrs_gradient_blue.hidden-sm-and-down(:class='{"pgrs_bg_primary": $route.name != "Busqueda"}')
             v-container(fluid)
                 v-layout(row wrap align-center).px-4
                     //- Section brand-logo

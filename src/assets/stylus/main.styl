@@ -11,6 +11,8 @@ $font-bold = 'Proxima Nova Bl', sans-serif
 
 $height-navigator = 104px 
 
+$color-primary = #342DA0
+
 // Utility mixins
 
 mixin-border-radius(n)
@@ -99,18 +101,24 @@ mixin-gradient-background(c1, c2)
 //- Modificators 
 
 .application--wrap
-    background #342DA0 !important
+    background $color-primary !important
 
 .pgrs_secondary_btn_color
     .v-btn__content
-        color #342DA0
+        color $color-primary
         font-family $font-semibold
+
+.pgrs_bg_primary
+    background $color-primary !important
+
+.v-content
+    padding 0 !important
 
 //---- PRELOADER COMPONENT
 
 #pgrs_global_preloader
     transition all ease 7s 
-    background #342DA0
+    background $color-primary
     //filter progidDXImageTransform.Microsoft.gradient(startColorstr="#02a6ea",endColorstr="#1ecbd8",GradientType=1)  
     position fixed
     top 0
@@ -135,7 +143,7 @@ mixin-gradient-background(c1, c2)
 
 //_--------------
 #pgrs_bg_login
-    background #342DA0
+    background $color-primary
     min-height 100vh
     display flex
     position relative
@@ -420,6 +428,13 @@ ul.pgrs_list_top_nav
                 .v-input__icon--append
                     .v-icon
                         font-size 10pt
+
+//_------------------------------
+//-- HOME PAGE
+//-------------------------------
+
+.pgrs_home_head_sec
+    background darken($color-primary, 4)
 
 // Progresus
 // .progresus

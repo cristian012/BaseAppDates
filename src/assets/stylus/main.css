@@ -13734,6 +13734,12 @@ table.v-table tfoot tr td {
   color: #342da0;
   font-family: 'Proxima Nova Sb', sans-serif;
 }
+.pgrs_bg_primary {
+  background: #342da0 !important;
+}
+.v-content {
+  padding: 0 !important;
+}
 #pgrs_global_preloader {
   transition: all ease 7s;
   background: #342da0;
@@ -14051,4 +14057,7 @@ ul.pgrs_list_top_nav li a .prgs_label_item {
 }
 .pgrs_finder_bar .pgrs_input_filter .v-input__slot .v-input__append-inner .v-input__icon--append .v-icon {
   font-size: 10pt;
+}
+.pgrs_home_head_sec {
+  background: #2f2990;
 }

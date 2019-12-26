@@ -2,11 +2,13 @@
     .global-content
         toolbar
 
-        v-content.home
-            v-container(fluid)
-                h1 {{$t('Bienvenido')}}
-                    small {{ userData.name }}
-                p {{ $store.state.title }} {{$t('está feliz de que estés aquí, elige por dónde quieres empezar.')}}
+        v-content
+            v-container(fluid).pgrs_pt_0.pgrs_home_head_sec
+                v-layout(row)
+                    v-flex(xl2 lg2)
+                    v-flex(xl8 lg8)
+                        global-search-bar()
+                    v-flex(xl2 lg2)
                 
                
 
@@ -25,6 +27,7 @@
 <script>
     import db from '@/db.json'
     import app from '../../mixins/app'
+    import GlobalSearchBar from '../../components/GlogalSearchBar'
 
     export default {
         mixins : [app],
@@ -38,7 +41,7 @@
                 ]
             }
         },
-
+        components:{GlobalSearchBar},
         data() {
             return {
                 // JSON
