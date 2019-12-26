@@ -38,6 +38,44 @@
             "tags": ["educación", "idiomas"]
         }
     ],
+    "servicesBeauty":[
+        {
+            "id": "005",
+            "imgUrl": "ortodoncia.png",
+            "logoC": "logo_sonria.png",
+            "subtitle": "Clínicas Sonría",
+            "title": "Procedimiento Ortodoncia",
+            "location": "Bogotá DC.",
+            "tags": ["Bienestar", "odontología"]
+        },
+        {
+            "id": "006",
+            "imgUrl": "micropigmentacion.png",
+            "logoC": "logo_clinic.png",
+            "subtitle": "Yu Spa",
+            "title": "Micropigmentación de cejas",
+            "location": "Bogotá DC.",
+            "tags": ["Belleza & SPA"]
+        },
+        {
+            "id": "007",
+            "imgUrl": "masaje-relajante.png",
+            "logoC": "logo_legal.png",
+            "subtitle": "Spa Therapy",
+            "title": "Masaje Relajante",
+            "location": "Bogotá DC.",
+            "tags": ["Belleza & SPA", "terapia"]
+        },
+        {
+            "id": "008",
+            "imgUrl": "exfoliacion.png",
+            "logoC": "logo_collage.png",
+            "subtitle": "Peace Corps PREP",
+            "title": "Exfoliación Facial",
+            "location": "Bogotá DC.",
+            "tags": ["Belleza & SPA"]
+        }
+    ],
     "userData": {
         "name": "German Forero Fonseca",
         "user_name": "German Forero",

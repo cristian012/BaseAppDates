@@ -71,7 +71,7 @@
                             | 8 elementos 
                     v-layout(row wrap, style='padding: 0.8em')
                         //- First 4th
-                        v-flex( v-for='(item, index) in pservices', :key='item.id' xl2, lg3, md4, sm4, xs12)
+                        v-flex( v-for='(item, index) in beautyServices', :key='item.id' xl2, lg3, md4, sm4, xs12)
                 
                             //-- Component card service
                             card-service(:data='item' :img-card='item.imgUrl' :img-logo='item.logoC')
@@ -103,6 +103,7 @@
             return {
                 // JSON
                 pservices: db.PopularServices,
+                beautyServices: db.servicesBeauty,
 
 
                 // Moneda del sistema
