@@ -20,65 +20,65 @@ mixin-border-radius(n)
 
 
 mixin-user-no-select()
-    -webkit-user-select: none   /* Chrome all / Safari all */
-    -moz-user-select: none      /* Firefox all */
-    -ms-user-select: none       /* IE 10+ */
-    user-select: none           /* Likely future */
+    -webkit-user-select none   /* Chrome all / Safari all */
+    -moz-user-select none      /* Firefox all */
+    -ms-user-select none       /* IE 10+ */
+    user-select none           /* Likely future */
 
 
 mixin-gradient-background(c1, c2)
-    background: c1 
-    background: -moz-linear-gradient(90deg, c1 0%, c2 100%) 
-    background: -webkit-linear-gradient(90deg, c1 0%, c2 100%) 
-    background: linear-gradient(90deg, c1 0%, c2 100%) 
+    background c1 
+    background -moz-linear-gradient(90deg, c1 0%, c2 100%) 
+    background -webkit-linear-gradient(90deg, c1 0%, c2 100%) 
+    background linear-gradient(90deg, c1 0%, c2 100%) 
 
 // Padding and margin utilities
 
 .pgrs_m_0
-    margin: 0 !important 
+    margin 0 !important 
 .pgrs_p_0
-    padding: 0 !important 
+    padding 0 !important 
 .pgrs_py_0
-    padding-top: 0 
-    padding-bottom: 0 
+    padding-top 0 
+    padding-bottom 0 
 .pgrs_px_0
-    padding-left: 0 
-    padding-right: 0   
+    padding-left 0 
+    padding-right 0   
 .pgrs_my_0
-    margin-top: 0 
-    margin-bottom: 0     
+    margin-top 0 
+    margin-bottom 0     
 .pgrs_mx_0
-    margin-left: 0 
-    margin-right: 0     
+    margin-left 0 
+    margin-right 0     
 
 
 //- Parapgraph size
 
 .pgrs_p8
-    font-size: 8pt
+    font-size 8pt
 .pgrs_p9
-    font-size: 9pt
+    font-size 9pt
 .pgrs_p10
-    font-size: 10pt
+    font-size 10pt
 .pgrs_p11
-    font-size: 11pt
+    font-size 11pt
 .pgrs_p12
-    font-size:12pt
+    font-size 12pt
 .pgrs_p13
-    font-size:13pt
+    font-size 13pt
 .pgrs_p14
-    font-size:15pt
+    font-size 15pt
 .pgrs_p15
-    font-size:15pt
+    font-size 15pt
 .pgrs_p16
-    font-size:16pt
+    font-size 16pt
 .pgrs_p17
-    font-size:17pt
+    font-size 17pt
 
 //base-convert()
 
 .pgrs_center
-    text-align: center
+    text-align center
 
 .pgrs_semibold
     font-family $font-semibold
@@ -94,30 +94,40 @@ mixin-gradient-background(c1, c2)
 
 .pgrs_btn_capitalize
     .v-btn__content
-        text-transform: capitalize !important
+        text-transform capitalize !important
+
+//- Modificators 
+
+.application--wrap
+    background #342DA0 !important
+
+.pgrs_secondary_btn_color
+    .v-btn__content
+        color #342DA0
+        font-family $font-semibold
 
 //---- PRELOADER COMPONENT
 
 #pgrs_global_preloader
-    transition: all ease 7s 
-    background: #342DA0
-    //filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#02a6ea",endColorstr="#1ecbd8",GradientType=1)  
-    position: fixed
-    top: 0
-    bottom: 0
-    left: 0
-    right: 0
-    z-index: 20
+    transition all ease 7s 
+    background #342DA0
+    //filter progidDXImageTransform.Microsoft.gradient(startColorstr="#02a6ea",endColorstr="#1ecbd8",GradientType=1)  
+    position fixed
+    top 0
+    bottom 0
+    left 0
+    right 0
+    z-index 20
     .inner-cont
         position relative
-        top: 30%    
-        width: 250px
-        height: 200px
-        position: absolute
-        margin: 0 auto
-        left: 0
-        right: 0
-        color: white
+        top 30%    
+        width 250px
+        height 200px
+        position absolute
+        margin 0 auto
+        left 0
+        right 0
+        color white
         .pgrs_progress
             position relative
 
@@ -125,9 +135,9 @@ mixin-gradient-background(c1, c2)
 
 //_--------------
 #pgrs_bg_login
-    background: #342DA0
-    min-height: 100vh
-    display: flex
+    background #342DA0
+    min-height 100vh
+    display flex
     position relative
     //border 1px solid red
     #pgrs_frame1
@@ -178,201 +188,212 @@ mixin-gradient-background(c1, c2)
 
 // Component nav
 #toolbar
-    height: $height-navigator
+    height $height-navigator
     .v-toolbar__content
-        height: 56px !important
+        height 56px !important
 
-@media (min-width: 960px) and (max-width:1023px) 
+@media (min-width 960px) and (max-width1023px) 
     #toolbar
-        height: 56px !important
+        height 56px !important
 
-@media (min-width: 623px) and (max-width: 667px)
+@media (min-width 623px) and (max-width 667px)
     #toolbar
-        height: 56px !important
+        height 56px !important
 
-@media screen and (max-width: 667px)
+@media screen and (max-width 667px)
     #toolbar
-        height: 56px !important
+        height 56px !important
 
-@media (min-width: 668px) and (max-width: 959px)
+@media (min-width 668px) and (max-width 959px)
     #toolbar
-        height: 56px !important
+        height 56px !important
 
 .pgrs_top_navbar
-    align-items: flex-end 
-    display: flex 
-    flex-direction: row 
-    font-family: $font-regular 
-    height: $height-navigator 
-    position: fixed 
-    top: 0 
-    left: 0 
-    right: 0 
-    z-index: 2 
+    align-items flex-end 
+    display flex 
+    flex-direction row 
+    font-family $font-regular 
+    height $height-navigator 
+    position fixed 
+    top 0 
+    left 0 
+    right 0 
+    z-index 2 
  
 
 .pgrs_top_navbar #pgrs_brand_sec_small
-    //background: rgba(255,255,255,0.9) 
-    border-radius: 4px 
-    display: flex   
-    flex: 0 0 auto 
-    margin-right: 0.4em 
+    //background rgba(255,255,255,0.9) 
+    border-radius 4px 
+    display flex   
+    flex 0 0 auto 
+    margin-right 0.4em 
    
     img 
-        max-width: 200px
+        max-width 200px
 
 
 
 ul.pgrs_list_top_nav
-    list-style: none 
-    text-decoration: none 
+    list-style none 
+    text-decoration none 
     position relative 
-    flex-direction: row 
-    align-items: center 
-    display: flex 
-    padding-left: 0.5em !important
+    flex-direction row 
+    align-items center 
+    display flex 
+    padding-left 0.5em !important
     .pgrs_sublist-item
-        padding-right: 1.3em 
+        padding-right 1.3em 
         &:hover
             .prgs_sublist-nav
-                max-height: 400px 
-                margin-top: 0 
+                max-height 400px 
+                margin-top 0 
             
         
-        &::after
-            content: '\25bc' 
-            color: white 
+        &:after
+            content '\25bc' 
+            color white 
             height 5px 
-            display: flex 
-            flex: 1 1 auto 
-            line-height: 0 
-            position: absolute 
-            width: 10px 
-            right: 1em 
-            top: 1.9em 
-            font-size: 8pt 
+            display flex 
+            flex 1 1 auto 
+            line-height 0 
+            position absolute 
+            width 10px 
+            right 1em 
+            top 1.9em 
+            font-size 8pt 
         
     
     li
-        font-family: $font-regular 
-        cursor: pointer 
-        display: inline-block 
-        position: relative 
-        border-radius: $button-border-radius 
+        font-family $font-regular 
+        cursor pointer 
+        display inline-block 
+        position relative 
+        border-radius $button-border-radius 
         mixin-user-no-select() 
         &:hover
-            background: rgba(0,0,0,0.15) 
+            background rgba(0,0,0,0.15) 
         
         .cont-indicator
-            display: flex 
-            flex-direction: row 
+            display flex 
+            flex-direction row 
             .cont-spacer
-                display: flex 
-                flex: 0 0 10% 
-                height: 4px 
+                display flex 
+                flex 0 0 10% 
+                height 4px 
             
             .c-indicator
-               position: relative  
-               flex: 1 1 90% 
-               height: 4px 
+               position relative  
+               flex 1 1 90% 
+               height 4px 
                .indicator
-                    background: transparent  
-                    margin: 0 auto  
-                    border-radius: 3em 
-                    position:absolute 
-                    width: 20px  
-                    height: 2px  
-                    top:-0.2em 
-                    left:0 
-                    right:0   
+                    background transparent  
+                    margin 0 auto  
+                    border-radius 3em 
+                    position absolute 
+                    width 20px  
+                    height 2px  
+                    top 0.2em 
+                    left 0 
+                    right 0   
                 
                 .indicator-marked
-                    background: #FCC250 !important     
+                    background #FCC250 !important     
                 
             
         
         a
-            color: white 
-            display: flex 
-            flex-direction: row 
-            align-items: center 
-            text-decoration: none 
-            font-size: 16px
-            padding: 0.8em 1em 0.8em 1em 
+            color white 
+            display flex 
+            flex-direction row 
+            align-items center 
+            text-decoration none 
+            font-size 16px
+            padding 0.8em 1em 0.8em 1em 
             .prgs_icon_item
-                flex: 0 0 auto 
+                flex 0 0 auto 
             
             .prgs_label_item
-                margin-left: 0.5em 
-                flex: 1 1 auto  
-                text-transform: capitalize   
+                margin-left 0.5em 
+                flex 1 1 auto  
+                text-transform capitalize   
 
 .pgrs_control_sec
-    flex: 1 1 auto 
-    display: flex 
-    flex-direction: row 
-    justify-content: flex-end 
-    align-items: center 
-    max-width: 229px
+    flex 1 1 auto 
+    display flex 
+    flex-direction row 
+    justify-content flex-end 
+    align-items center 
+    max-width 255px
+    position relative
     .pgrs_btn_login
-        position relative
         .pgrs_float_login
-            background: rgba(255,255,255,0.1)
-            width: 300px
-            position absolute
-            top 4em
+            background rgba(255,255,255,0.1)
+            width 300px
+            top 4.5em
             right 0
             border-radius 4px
+            position absolute
+            &:after
+                content ''
+                position absolute
+                width 0
+                height 0
+                border-left 10px solid transparent
+                border-right 10px solid transparent
+                border-bottom 10px solid rgba(255,255,255,0.1)
+                top -0.7em
+                right 4em
+
     .pgrs_label_profile
         .pgrs_label_p
-            background: #CBE39F 
-            padding: 0.3em 
-            color: #000 
-            font-size: 8pt 
-            border-radius: 2em 
-            text-align:center 
+            background #CBE39F 
+            padding 0.3em 
+            color #000 
+            font-size 8pt 
+            border-radius 2em 
+            text-align center 
     
     .pgrs_cont_btn
-        display: flex 
-        flex: 1 1 auto   
+        display flex 
+        flex 1 1 auto   
     
     .pgrs_access-profile
         .pgrs_access_menu
-            position: relative
-            &::after
-                content: '\25bc' 
-                color: white 
+            position relative
+            &:after
+                content '\25bc' 
+                color white 
                 height 8px 
-                display: flex 
-                flex: 1 1 auto 
-                line-height: 0 
-                position: absolute 
-                width: 10px 
-                right: -0.3em 
-                top: 1em 
-                font-size: 8pt 
+                display flex 
+                flex 1 1 auto 
+                line-height 0 
+                position absolute 
+                width 10px 
+                right -0.3em 
+                top 1em 
+                font-size 8pt 
         .pgrs_profile
-            width: 44px !important 
-            height:44px !important 
-            background: rgba(255,255,255,0.3) 
+            width 44px !important 
+            height44px !important 
+            background rgba(255,255,255,0.3) 
             position relative 
-            border-radius: 10em 
-            padding: .18em 
-            cursor: pointer 
+            border-radius 10em 
+            padding .18em 
+            cursor pointer 
             
             .pgrs_photo
-                background: #FCC250
-                border-radius: 10em 
+                background #FCC250
+                border-radius 10em 
                 overflow hidden 
-                width: 38px 
-                height: 38px 
+                width 38px 
+                height 38px 
             
 //_------------------------------
 //-- COMPONENT GLOBAL SEARCH BAR
 //-------------------------------
 
 .pgrs_finder_bar
-    background: rgba(255,255,255,0.1)
+    background rgba(255,255,255,0.1)
     padding 0.4em 0.5em
     border-radius 10em
     .pgrs_input_cont
@@ -389,7 +410,7 @@ ul.pgrs_list_top_nav
     .pgrs_btn_s
         border-top-right-radius 10em
         border-bottom-right-radius 10em
-        height: 100%
+        height 100%
         width 100%
     .pgrs_input_filter
         .v-input__slot
@@ -398,7 +419,7 @@ ul.pgrs_list_top_nav
             .v-input__append-inner
                 .v-input__icon--append
                     .v-icon
-                        font-size: 10pt
+                        font-size 10pt
 
 // Progresus
 // .progresus
@@ -439,13 +460,13 @@ ul.pgrs_list_top_nav
 //         transition .3s ease-in-out
         
 //     &.light
-//         color: $colors.light.base
+//         color $colors.light.base
 //         .symbol 
 //             background-image url('../img/progresus/symbol-progresus-light.svg')
 //         .typography
 //             background-image url('../img/progresus/typo-progresus-light.svg')
             
-//     &:hover
+//     &hover
 //         span
 //             left 0
 //         .symbol
@@ -456,10 +477,10 @@ ul.pgrs_list_top_nav
 
 // // Global
 // .global-content
-//     min-height: 100vh
-//     display: flex
+//     min-height 100vh
+//     display flex
 //     flex-wrap wrap
-//     word-break: break-word
+//     word-break break-word
     
 // .pos
 //     &-r
@@ -490,7 +511,7 @@ ul.pgrs_list_top_nav
 //         height 31px !important
         
 //         &--active
-//             transform: none !important
+//             transform none !important
 //             border-radius 0 !important
             
 // .vc-grayscale
@@ -527,22 +548,22 @@ ul.pgrs_list_top_nav
 //     height auto !important
     
 //     &-content
-//         padding: $grid-gutters.xl
+//         padding $grid-gutters.xl
 //         display flex
 //         flex-wrap wrap
 //         align-items flex-end
         
 //         @media(max-width 959px)
-//             padding: $grid-gutters.lg
+//             padding $grid-gutters.lg
 
 //         > a
 //             margin-right 1rem
 //             line-height 0
             
 //         > small
-//             line-height: 1
-//             font-size: 10px
-//             color: $colors.dark.lighten-2
+//             line-height 1
+//             font-size 10px
+//             color $colors.dark.lighten-2
     
 //     &.menu
 //         &-open
@@ -552,26 +573,26 @@ ul.pgrs_list_top_nav
 //                 margin-left 56px
                 
 //     &.back-active
-//         margin-left: 40px + $grid-gutters.xl
+//         margin-left 40px + $grid-gutters.xl
         
 //         @media(max-width 959px)
-//             margin-left: 40px + $grid-gutters.lg
+//             margin-left 40px + $grid-gutters.lg
 
 //         &-menu
-//             margin-left: 300px + 40px + $grid-gutters.xl
+//             margin-left 300px + 40px + $grid-gutters.xl
         
 //             @media(max-width 959px)
-//                 margin-left: 300px + 40px + $grid-gutters.lg
+//                 margin-left 300px + 40px + $grid-gutters.lg
 
 //             &-mini
-//                 margin-left: 56px + 40px + $grid-gutters.xl
+//                 margin-left 56px + 40px + $grid-gutters.xl
                 
 //                 @media(max-width 959px)
-//                     margin-left: 56px + 40px + $grid-gutters.lg
+//                     margin-left 56px + 40px + $grid-gutters.lg
 
 // // Nav
 // .menu
-//     display: flex
+//     display flex
 //     flex-direction column
 
 //     &-account
@@ -600,7 +621,7 @@ ul.pgrs_list_top_nav
 //                     font-size 14px
                     
 //     &-items
-//         overflow: auto
+//         overflow auto
 //         padding-bottom 1px !important
 
 //         .v-list__tile
@@ -611,45 +632,45 @@ ul.pgrs_list_top_nav
             
 //         .v-list__group__items--no-action 
 //             .v-list__tile
-//                 padding-left: $grid-gutters.lg
+//                 padding-left $grid-gutters.lg
                 
 //     &.v-navigation-drawer--mini-variant
 //         .v-list__group__items--no-action 
 //             .v-list__tile
-//                 padding-left: 0
+//                 padding-left 0
         
 //         .menu-items
 //             .v-list__group__header
-//                 > div:not(.v-list__group__header__prepend-icon):not(.v-list__group__header__append-icon)
+//                 > divnot(.v-list__group__header__prepend-icon)not(.v-list__group__header__append-icon)
 //                     min-width 100%
 //                     width 100%
                 
 // // Filtro
 // .filter
-//     background: $colors.light.darken-1
-//     display: flex
+//     background $colors.light.darken-1
+//     display flex
 //     flex-direction column
     
 //     &-search
 //         flex none
         
 //         .v-input__slot
-//             background: $colors.light.darken-2 !important
+//             background $colors.light.darken-2 !important
 //             border-radius 0 !important
     
 //     &-content
-//         padding: $grid-gutters.lg
-//         overflow: auto
+//         padding $grid-gutters.lg
+//         overflow auto
         
 //         h3
 //             font-size 11px
 //             font-weight 500
-//             margin: 0 0 $grid-gutters.md
+//             margin 0 0 $grid-gutters.md
             
 //         .v-divider
 //             max-width initial
-//             margin-left: (- $grid-gutters.lg)
-//             margin-right: (- $grid-gutters.lg)
+//             margin-left (- $grid-gutters.lg)
+//             margin-right (- $grid-gutters.lg)
         
 //         .date-filter
 //             elevation(0)
@@ -666,15 +687,15 @@ ul.pgrs_list_top_nav
 // .theme--dark
 //     .filter-search
 //         .v-input__slot
-//             background: $colors.dark.base !important
+//             background $colors.dark.base !important
             
 //     .infinite-loading
-//         background: $colors.dark.base
+//         background $colors.dark.base
             
 // // Infinite loading
 // .infinite-loading
-//     background: $colors.light.base
-//     // color: $colors.light.base
+//     background $colors.light.base
+//     // color $colors.light.base
 //     border-radius 6px
 //     display flex
 //     align-items center
@@ -682,18 +703,18 @@ ul.pgrs_list_top_nav
     
 // // Resultados no encontrados
 // .not-found
-//     display: flex
-//     flex-wrap: wrap
-//     justify-content: center
-//     text-align: center
-//     align-content: center
-//     min-height: calc(100vh - 56px - 45px - 69px - 62px)
-//     width: 100%
+//     display flex
+//     flex-wrap wrap
+//     justify-content center
+//     text-align center
+//     align-content center
+//     min-height calc(100vh - 56px - 45px - 69px - 62px)
+//     width 100%
     
 //     &-img
-//         width: auto
-//         height: 300px
-//         max-width: 100%
+//         width auto
+//         height 300px
+//         max-width 100%
     
 //     &-content
 //         display flex
@@ -711,21 +732,21 @@ ul.pgrs_list_top_nav
 //             font-weight 500
 
 //     &-small
-//         min-height: initial
+//         min-height initial
 
 //         .not-found-content
-//             display: flex
+//             display flex
 //             flex-wrap wrap
 //             align-items center
-//             margin: -.4rem
+//             margin -.4rem
 //             justify-content flex-start
             
 //             .v-icon
-//                 margin: .4rem
+//                 margin .4rem
 
 //             h3 
 //                 width auto
-//                 margin: .4rem
+//                 margin .4rem
             
 // // Upload
 // .upload
@@ -733,12 +754,12 @@ ul.pgrs_list_top_nav
 //     z-index 1
     
 //     &-content
-//         border: 1px dotted
+//         border 1px dotted
 //         border-radius 6 px
-//         padding: $grid-gutters.xl
+//         padding $grid-gutters.xl
         
 //         @media(max-width 959px)
-//             padding: $grid-gutters.lg
+//             padding $grid-gutters.lg
         
 //         h3 
 //             font-weight 300
@@ -751,15 +772,15 @@ ul.pgrs_list_top_nav
 //             max-width 100%
         
 //     .file-uploads 
-//         display: inherit
+//         display inherit
 
 // // Charts
 // .dashboard
 //     .flex
-//         padding: $grid-gutters.xl
+//         padding $grid-gutters.xl
         
 //         @media(max-width 959px)
-//             padding: $grid-gutters.lg
+//             padding $grid-gutters.lg
 
 // .amcharts
 //     &-amexport
@@ -784,7 +805,7 @@ ul.pgrs_list_top_nav
 //     &-data
 //         position relative
         
-//         &:before
+//         &before
 //             content ''
 //             background currentColor
 //             display block
@@ -799,14 +820,14 @@ ul.pgrs_list_top_nav
 //             font-size 12px
 //             font-weight 400
 //             line-height 1.1
-//             color: white
+//             color white
 //             position relative
 //             z-index 1
         
 //         h3
 //             font-size 16px
 //             font-weight 500
-//             color: white
+//             color white
 //             position relative
 //             z-index 1
 
@@ -863,7 +884,7 @@ ul.pgrs_list_top_nav
 //                 align-items center
 //                 justify-content center
                 
-//                 &:before
+//                 &before
 //                     content ''
 //                     background currentColor
 //                     display block
@@ -877,17 +898,17 @@ ul.pgrs_list_top_nav
                 
 //                 .v-radio
 //                 .v-label
-//                     position: absolute !important
-//                     top: 0 !important
-//                     left: 0 !important
-//                     right: 0 !important
-//                     bottom: 0 !important
-//                     opacity: 0 !important
-//                     margin: 0 !important
-//                     display: block
+//                     position absolute !important
+//                     top 0 !important
+//                     left 0 !important
+//                     right 0 !important
+//                     bottom 0 !important
+//                     opacity 0 !important
+//                     margin 0 !important
+//                     display block
                     
-//                 &:hover
-//                     &:before
+//                 &hover
+//                     &before
 //                         opacity .2
     
 //     &-1
@@ -904,7 +925,7 @@ ul.pgrs_list_top_nav
             
 // .theme--dark
 //     .chart-data
-//         &:before
+//         &before
 //             opacity .2
         
 //         h2
@@ -916,8 +937,8 @@ ul.pgrs_list_top_nav
 // // Home
 // .home
 //     .v-content__wrap
-//         min-height: calc(100vh - 56px - 70px)
-//         display: flex
+//         min-height calc(100vh - 56px - 70px)
+//         display flex
         
 //         .container
 //             display flex
@@ -953,15 +974,15 @@ ul.pgrs_list_top_nav
 //                 padding 0
             
 //             > h2
-//                 margin: 0
-//                 text-transform: uppercase
-//                 position: absolute
-//                 transform: rotate(-90deg)
-//                 transform-origin: left top
-//                 bottom: 0
-//                 left: 0
-//                 width: 300px
-//                 text-align: left
+//                 margin 0
+//                 text-transform uppercase
+//                 position absolute
+//                 transform rotate(-90deg)
+//                 transform-origin left top
+//                 bottom 0
+//                 left 0
+//                 width 300px
+//                 text-align left
                 
 //                 @media(max-width 1800px)
 //                     position relative
@@ -986,7 +1007,7 @@ ul.pgrs_list_top_nav
 //             width 250px
 //             transition .5s transform 
             
-//             &:before
+//             &before
 //                 content ''
 //                 background currentColor
 //                 display block
@@ -1020,24 +1041,24 @@ ul.pgrs_list_top_nav
                     
 //                 .v-input
 //                     &__slot
-//                         width: auto
-//                         margin: auto
+//                         width auto
+//                         margin auto
 //                         border-radius 6px !important
 //                         padding 1rem !important
 //                         cursor pointer !important
                         
 //                     .v-select__selections
-//                         font-size: 63px
-//                         font-weight: 600
-//                         text-align: center
-//                         line-height: 1
-//                         color: $colors.success.base
+//                         font-size 63px
+//                         font-weight 600
+//                         text-align center
+//                         line-height 1
+//                         color $colors.success.base
                         
 //                         input
-//                             width: 0;
-//                             min-width: 0;
-//                             height: 0;
-//                             padding: 0;
+//                             width 0
+//                             min-width 0
+//                             height 0
+//                             padding 0
                             
 //                     &__append-inner
 //                         display none
@@ -1046,11 +1067,11 @@ ul.pgrs_list_top_nav
 //                 color inherit
                 
 //                 &.bg
-//                     font-size: 200px
-//                     position: absolute
-//                     right: -3rem
-//                     bottom: -3rem
-//                     opacity: .05
+//                     font-size 200px
+//                     position absolute
+//                     right -3rem
+//                     bottom -3rem
+//                     opacity .05
             
 //             h2
 //                 font-size 16px
@@ -1070,11 +1091,11 @@ ul.pgrs_list_top_nav
 //                 position relative
 //                 z-index 1 
                 
-//             &:hover
+//             &hover
 //                 transform scale(1.05)
-//                 color: $colors.success.base
+//                 color $colors.success.base
                 
-//                 &:before
+//                 &before
 //                     opacity .05
                     
 //                 .home__menu__item__content
@@ -1098,7 +1119,7 @@ ul.pgrs_list_top_nav
 //         width 300px
 //         max-width 100%
 //         text-align center
-//         color: $colors.dark.base
+//         color $colors.dark.base
         
 //         .v-footer
 //             margin 0
@@ -1108,7 +1129,7 @@ ul.pgrs_list_top_nav
 //                 margin auto
                 
 //                 .progresus.light
-//                     color: $colors.dark.base
+//                     color $colors.dark.base
                     
 //                     .symbol 
 //                         background-image url('../img/progresus/symbol-progresus.svg')
@@ -1133,7 +1154,7 @@ ul.pgrs_list_top_nav
 //         width 600px
 //         max-width 100%
 //         text-align center
-//         color: $colors.dark.base
+//         color $colors.dark.base
         
 //         p
 //             font-size 12px
@@ -1150,7 +1171,7 @@ ul.pgrs_list_top_nav
 //                 margin auto
                 
 //                 .progresus.light
-//                     color: $colors.dark.base
+//                     color $colors.dark.base
                     
 //                     .symbol 
 //                         background-image url('../img/progresus/symbol-progresus.svg')
@@ -1166,7 +1187,7 @@ ul.pgrs_list_top_nav
 
 // // Contenido textual
 // .text-logo
-//     margin: 0 0 1.5rem
+//     margin 0 0 1.5rem
 
 //     img
 //         width 300px
@@ -1175,54 +1196,54 @@ ul.pgrs_list_top_nav
 
 // .text-content
 // .ql-editor
-//     line-height: 1.5
+//     line-height 1.5
 //     font-family $body-font-family
 
 //     h1
 //         font-size 24px !important
 //         font-weight 700 !important
-//         margin: 0 0 1.5rem !important
+//         margin 0 0 1.5rem !important
 
 //     h2 
 //         font-size 20px !important
 //         font-weight 600 !important
-//         margin: 0 0 1.5rem !important
+//         margin 0 0 1.5rem !important
 
 //     h3
 //         font-size 18px !important
 //         font-weight 500 !important
-//         margin: 0 0 1.5rem !important
+//         margin 0 0 1.5rem !important
 
 //     h4
 //         font-size 16px !important
 //         font-weight 500 !important
-//         margin: 0 0 1.5rem !important
+//         margin 0 0 1.5rem !important
 
 //     h5
 //         font-size 14px !important
 //         font-weight 500 !important
-//         margin: 0 0 1.5rem !important
+//         margin 0 0 1.5rem !important
 
 //     h6
 //         font-size 13px !important
 //         font-weight 500 !important
-//         margin: 0 0 1.5rem !important
+//         margin 0 0 1.5rem !important
 
 //     p 
 //         font-size 14px !important
 //         font-weight 400 !important
-//         margin: 0 0 1.5rem !important
+//         margin 0 0 1.5rem !important
 
 //     ul
 //     ol
 //         padding-left 1.7rem !important
-//         margin: 0 0 1.5rem !important
+//         margin 0 0 1.5rem !important
 
 //         li 
-//             margin: .3rem 0 !important
+//             margin .3rem 0 !important
     
 //     a
-//         text-decoration: underline !important
+//         text-decoration underline !important
 //         font-weight 500 !important
     
 //     blockquote

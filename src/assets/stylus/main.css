@@ -13727,6 +13727,13 @@ table.v-table tfoot tr td {
 .pgrs_btn_capitalize .v-btn__content {
   text-transform: capitalize !important;
 }
+.application--wrap {
+  background: #342da0 !important;
+}
+.pgrs_secondary_btn_color .v-btn__content {
+  color: #342da0;
+  font-family: 'Proxima Nova Sb', sans-serif;
+}
 #pgrs_global_preloader {
   transition: all ease 7s;
   background: #342da0;
@@ -13812,7 +13819,7 @@ table.v-table tfoot tr td {
 #toolbar .v-toolbar__content {
   height: 56px !important;
 }
-@media (min-width: 960px) and (max-width: 1023px) {
+@media (min-width: 960px) and (max-width1023px) {
   #toolbar {
     height: 56px !important;
   }
@@ -13869,7 +13876,7 @@ ul.pgrs_list_top_nav .pgrs_sublist-item:hover .prgs_sublist-nav {
   max-height: 400px;
   margin-top: 0;
 }
-ul.pgrs_list_top_nav .pgrs_sublist-item::after {
+ul.pgrs_list_top_nav .pgrs_sublist-item:after {
   content: '\25bc';
   color: #fff;
   height: 5px;
@@ -13917,7 +13924,7 @@ ul.pgrs_list_top_nav li .cont-indicator .c-indicator .indicator {
   position: absolute;
   width: 20px;
   height: 2px;
-  top: -0.2em;
+  top: 0.2em;
   left: 0;
   right: 0;
 }
@@ -13947,18 +13954,27 @@ ul.pgrs_list_top_nav li a .prgs_label_item {
   flex-direction: row;
   justify-content: flex-end;
   align-items: center;
-  max-width: 229px;
-}
-.pgrs_control_sec .pgrs_btn_login {
+  max-width: 255px;
   position: relative;
 }
 .pgrs_control_sec .pgrs_btn_login .pgrs_float_login {
   background: rgba(255,255,255,0.1);
   width: 300px;
-  position: absolute;
-  top: 4em;
+  top: 4.5em;
   right: 0;
   border-radius: 4px;
+  position: absolute;
+}
+.pgrs_control_sec .pgrs_btn_login .pgrs_float_login:after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-bottom: 10px solid rgba(255,255,255,0.1);
+  top: -0.7em;
+  right: 4em;
 }
 .pgrs_control_sec .pgrs_label_profile .pgrs_label_p {
   background: #cbe39f;
@@ -13975,7 +13991,7 @@ ul.pgrs_list_top_nav li a .prgs_label_item {
 .pgrs_control_sec .pgrs_access-profile .pgrs_access_menu {
   position: relative;
 }
-.pgrs_control_sec .pgrs_access-profile .pgrs_access_menu::after {
+.pgrs_control_sec .pgrs_access-profile .pgrs_access_menu:after {
   content: '\25bc';
   color: #fff;
   height: 8px;
@@ -13990,7 +14006,7 @@ ul.pgrs_list_top_nav li a .prgs_label_item {
 }
 .pgrs_control_sec .pgrs_access-profile .pgrs_profile {
   width: 44px !important;
-  height: 44px !important;
+  height44px: !important;
   background: rgba(255,255,255,0.3);
   position: relative;
   border-radius: 10em;

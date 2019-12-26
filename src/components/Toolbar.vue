@@ -25,11 +25,12 @@
 
                     //- cofiguration and notification sec
                     v-flex.pgrs_control_sec
-                        slot(name='login')
+                        v-flex(v-if='$route.name == "Busqueda"')
+                            slot(name='login')
                         
                         //-- Panel access user session active
                         //---------------------------------------
-                        v-layout(v-show='false' row justify-end)
+                        v-layout(v-else row justify-end)
                             v-flex.pgrs_cont_btn()
                                 v-btn.pgrs_mx_0(flat, icon, dark)
                                     v-icon(size='20px') $vuetify.icons.notifications
@@ -49,7 +50,7 @@
                                                 v-list-tile(href='https://helpdesk.progresus.co/open.php' target='_blank')
                                                     v-list-tile-title Reportar un problema
                                                 v-divider
-                                                v-list-tile(to='/login')
+                                                v-list-tile(to='/busqueda')
                                                     v-list-tile-title Salir
                                     v-layout.pgrs_profile
                                         div.pgrs_photo
