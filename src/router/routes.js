@@ -60,7 +60,7 @@ export default [
     },
     {
         path: "/",
-        name: "Home",
+        name: "Busqueda",
         component: Home,
         meta: { auth: true }
     },

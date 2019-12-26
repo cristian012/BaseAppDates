@@ -27,7 +27,14 @@
     export default {
         data() {
             return {
-                city:''
+                city:'',
+                  cities:[
+                    'Bogotá DC',
+                    'Barranquilla',
+                    'Bucaramanga',
+                    'Cali',
+                    'Medellín',
+                ],
             }
         },
     };

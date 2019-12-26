@@ -16,13 +16,6 @@ export default {
             min: Number.MIN_SAFE_INTEGER,
             max: Number.MAX_SAFE_INTEGER
         },
-        cities:[
-            'Bogotá DC',
-            'Barranquilla',
-            'Bucaramanga',
-            'Cali',
-            'Medellín',
-        ],
         //-----------------------Mixins-----------------
         rules: {
             required: value => !!value || 'Requerido.',

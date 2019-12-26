@@ -9,14 +9,46 @@
                     v-flex(xl8 lg8)
                         global-search-bar()
                     v-flex(xl2 lg2)
-            
-            v-container(fluid)
+
+                #pgrs_frame1
+                #pgrs_frame4
+
+            v-container(fluid)#first-section-home
                 v-flex
                     v-container(grid-list-lg)
                         v-layout(row wrap)
+                            v-flex(xl4 lg4)
+                            v-flex(xl8 lg4).pt-0.pb-0
+                                .pgrs_main_title_section.pgrs_semibold
+                                    v-icon(color='white') $vuetify.icons.outline_star
+                                    | &nbsp; Más populares
+                            v-flex(xl4 lg4)
+                        v-layout(row wrap).pgrs_cont_favorites
+                            //- First 4th
                             v-flex( v-for='(item, index) in 4', :key='index' xl2, lg3, md4, sm4, xs12)
-                                v-card(height='90px')
+                                v-card(height='190px')
                                     | Card Info
+                            //- Request and fill div
+                            v-flex(xs12).pt-0.pb-0
+                                .pgrs_dynamic_content_fill(:class='{"pgrs_dynamic_content_fill_open": togglePopular}')
+                                    v-layout(row wrap)
+                                        v-flex( v-for='(item, index) in 8', :key='index' xl2, lg3, md4, sm4, xs12)
+                                            v-card(height='190px')
+                                                | Card Info
+
+                            //- Open more results
+                            v-flex(xs12)
+                                v-layout(row wrap)
+                                    v-flex(xl5 lg5)
+                                    v-flex(xl2 lg2)
+                                        .pgrs_center
+                                            v-btn(outline dark round @click='togglePopular = !togglePopular').pgrs_btn_capitalize 
+                                                |  Ver todos  &nbsp;
+                                                span(v-if='togglePopular == false' style='line-height:0')
+                                                    v-icon(size='14px') $vuetify.icons.chevron_up
+                                                span(v-else style='line-height:0')
+                                                    v-icon(size='14px') $vuetify.icons.chevron_down
+                                    v-flex(xl5 lg5)
 
         confirm(
             ref="changeCurrency"
@@ -51,6 +83,9 @@
 
                 // Moneda del sistema
                 money: '40',
+
+                //toggle open more popular
+                togglePopular: false
             }
         },
 

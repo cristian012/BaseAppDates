@@ -49,7 +49,10 @@ Vue.use(Vuetify, {
         'notifications': 'far fa-bell',
         'show': 'far fa-eye',
         'hide': 'far fa-eye-slash',
-        'lock': 'fas fa-lock'
+        'lock': 'fas fa-lock',
+        'outline_star': 'far fa-star',
+        'chevron_up': 'fas fa-chevron-up',
+        'chevron_down': 'fas fa-chevron-down'
     }
 });
 

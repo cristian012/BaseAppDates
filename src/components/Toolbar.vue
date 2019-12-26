@@ -3,7 +3,7 @@
         //----------------------------------------------
         //-- NAVBAR REOLUTIONS (LG XS)
         //----------------------------------------------
-        v-flex.pgrs_top_navbar.pgrs_gradient_blue.hidden-sm-and-down(:class='{"pgrs_bg_primary": $route.name != "Busqueda"}')
+        v-flex.pgrs_top_navbar.pgrs_gradient_blue.hidden-sm-and-down(:class='{"pgrs_bg_primary": $route.fullPath != "/busqueda"}')
             v-container(fluid)
                 v-layout(row wrap align-center).px-4
                     //- Section brand-logo
@@ -25,7 +25,7 @@
 
                     //- cofiguration and notification sec
                     v-flex.pgrs_control_sec
-                        v-flex(v-if='$route.name == "Busqueda"')
+                        v-flex(v-if='$route.fullPath == "/busqueda"')
                             slot(name='login')
                         
                         //-- Panel access user session active
